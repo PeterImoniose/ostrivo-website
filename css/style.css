@@ -386,12 +386,16 @@ section { padding: 72px 0; }
 }
 
 .avatar-photo {
-    width: 220px;
-    height: 220px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     overflow: hidden;
     border: 1px solid var(--border);
     margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+    .avatar-photo { width: 120px; height: 120px; }
 }
 
 .avatar-photo img {
