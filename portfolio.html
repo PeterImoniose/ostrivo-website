@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Peter Imoniose</title>
+<meta name="description" content="Projects and dashboards by Peter Imoniose, including Ostrivo, Power BI dashboards, and Python projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container nav">
+        <a href="index.html" class="nav-brand"><span class="dot"></span>Peter Imoniose</a>
+        <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="ostrivo.html">Ostrivo</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <section class="hero" style="padding-bottom: 24px;">
+        <div class="container">
+            <span class="eyebrow">Portfolio</span>
+            <h1>Projects &amp; dashboards</h1>
+            <p class="lead">
+                A growing collection of work - shipped products, Power BI dashboards, and
+                Python projects. New pieces get added here as they're finished.
+            </p>
+        </div>
+    </section>
+
+    <section style="padding-top: 0;">
+        <div class="container">
+            <div id="filter-bar" class="filter-bar"></div>
+            <div id="portfolio-grid" class="grid"></div>
+            <div id="empty-state" class="empty-state" style="display:none;">
+                Nothing in this category yet - check back soon.
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-row">
+        <span class="footer-note">© 2026 Peter Imoniose. Built with Ostrivo behind it.</span>
+        <ul class="footer-links">
+            <li><a href="https://github.com/PeterImoniose" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/avwerosuo-imoniose-bbb3b915a" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="about.html">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="js/portfolio-data.js"></script>
+<script src="js/portfolio-render.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
