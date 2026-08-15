@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function cardHtml(item) {
         const isExternal = /^https?:\/\//.test(item.link);
         const linkAttrs = isExternal ? 'target="_blank" rel="noopener"' : '';
+        const secondaryHtml = item.secondaryLink ? `
+                <a class="btn btn-secondary" href="${item.secondaryLink}" target="_blank" rel="noopener" style="margin-left: 8px;">${item.secondaryLinkLabel || 'View'} →</a>
+        ` : '';
         return `
             <div class="card" data-category="${item.category}">
                 <div class="image-slot">
@@ -24,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span class="tag">${item.tag}</span>
                 <h3>${item.title}</h3>
                 <p>${item.description}</p>
-                <a class="btn btn-secondary" href="${item.link}" ${linkAttrs}>${item.linkLabel} →</a>
+                <a class="btn btn-secondary" href="${item.link}" ${linkAttrs}>${item.linkLabel} →</a>${secondaryHtml}
             </div>
         `;
     }

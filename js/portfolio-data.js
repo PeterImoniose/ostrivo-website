@@ -9,6 +9,17 @@ const PORTFOLIO_ITEMS = [
         link: "ostrivo.html",
         linkLabel: "View project",
         icon: "📊"
+    },
+    {
+        title: "Mamidav International",
+        category: "other",
+        tag: "Client website",
+        description: "Company website built and deployed for Mamidav International Ltd, migrated from GitHub Pages to Hostinger with a PHP/MySQL backend.",
+        link: "https://www.mamidavintltd.com/",
+        linkLabel: "Visit site",
+        secondaryLink: "https://github.com/maranathaadesanya/mamidavintltd",
+        secondaryLinkLabel: "View on GitHub",
+        icon: "🌐"
     }
 
     /* Example of a future Power BI dashboard entry - copy this shape:
