@@ -8,7 +8,8 @@ const PORTFOLIO_ITEMS = [
         description: "AI-powered business intelligence web app - upload a CSV/Excel file and get instant dashboards, anomaly detection, and plain-English executive summaries.",
         link: "ostrivo.html",
         linkLabel: "View project",
-        icon: "📊"
+        icon: "📊",
+        noImage: true
     },
     {
         title: "Mamidav International",
@@ -19,7 +20,8 @@ const PORTFOLIO_ITEMS = [
         linkLabel: "Visit site",
         secondaryLink: "https://github.com/maranathaadesanya/mamidavintltd",
         secondaryLinkLabel: "View on GitHub",
-        icon: "🌐"
+        icon: "🌐",
+        noImage: true
     },
     {
         title: "Wind Turbine Predictive Maintenance",
