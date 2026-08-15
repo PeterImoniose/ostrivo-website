@@ -28,7 +28,8 @@ const PORTFOLIO_ITEMS = [
         description: "A three-stage machine learning pipeline (anomaly detection, fault classification, cross-farm transfer validation) for predictive maintenance of wind turbines using SCADA sensor data, evaluated on the CARE benchmark.",
         link: "https://github.com/PeterImoniose/care-wind-turbine-predictive-maintenance",
         linkLabel: "View on GitHub",
-        icon: "🌬️"
+        icon: "🌬️",
+        noImage: true
     },
     {
         title: "Password Protection System",
@@ -37,7 +38,8 @@ const PORTFOLIO_ITEMS = [
         description: "A secure, from-scratch account system - hashed and salted passwords, self-expiring login lockout, and password recovery - rewritten from an insecure notebook prototype into a tested Python package.",
         link: "https://github.com/PeterImoniose/Password_protection_system",
         linkLabel: "View on GitHub",
-        icon: "🔒"
+        icon: "🔒",
+        noImage: true
     },
     {
         title: "Industrial Pump Maintenance Analysis",
@@ -46,7 +48,8 @@ const PORTFOLIO_ITEMS = [
         description: "Statistical testing and machine learning applied to industrial pump sensor data to test whether maintenance needs can be predicted - and honestly reports the negative result when the data doesn't support it.",
         link: "https://github.com/PeterImoniose/Industrial-Pump-Maintenance-Analysis",
         linkLabel: "View on GitHub",
-        icon: "⚙️"
+        icon: "⚙️",
+        noImage: true
     },
     {
         title: "Fuel System Condition Analysis",
@@ -55,7 +58,8 @@ const PORTFOLIO_ITEMS = [
         description: "Condition monitoring of a fuel injection test rig across five induced fault types, plus a physics-informed regression model for flow prediction deployed as an interactive Gradio demo.",
         link: "https://github.com/PeterImoniose/Analysis-of-the-condition-of-a-fuel-system",
         linkLabel: "View on GitHub",
-        icon: "⛽"
+        icon: "⛽",
+        noImage: true
     }
 
     /* Example of a future Power BI dashboard entry - copy this shape:

@@ -18,12 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const secondaryHtml = item.secondaryLink ? `
                 <a class="btn btn-secondary" href="${item.secondaryLink}" target="_blank" rel="noopener" style="margin-left: 8px;">${item.secondaryLinkLabel || 'View'} →</a>
         ` : '';
-        return `
-            <div class="card" data-category="${item.category}">
+        const imageSlotHtml = item.noImage ? '' : `
                 <div class="image-slot">
                     <span class="icon">${item.icon || '🗂️'}</span>
                     <span>Screenshot coming soon</span>
                 </div>
+        `;
+        return `
+            <div class="card" data-category="${item.category}">${imageSlotHtml}
                 <span class="tag">${item.tag}</span>
                 <h3>${item.title}</h3>
                 <p>${item.description}</p>
