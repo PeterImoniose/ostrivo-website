@@ -62,6 +62,66 @@ const PORTFOLIO_ITEMS = [
         linkLabel: "View on GitHub",
         icon: "⛽",
         noImage: true
+    },
+    {
+        title: "Online Retail Sales Analysis",
+        category: "python",
+        tag: "Python",
+        description: "Revenue, seasonality, and RFM analysis of two years of real UK online retailer transactions - customer segmentation groundwork for a follow-up piece of ML work.",
+        link: "https://github.com/PeterImoniose/Online-Retail-Analysis",
+        linkLabel: "View on GitHub",
+        icon: "🛍️",
+        noImage: true
+    },
+    {
+        title: "Rossmann Store Sales Analysis",
+        category: "python",
+        tag: "Python",
+        description: "What actually drives daily sales across 1,115 German drugstores - promo uplift, store type, seasonality, and why competition distance turns out not to matter.",
+        link: "https://github.com/PeterImoniose/Rossmann",
+        linkLabel: "View on GitHub",
+        icon: "🏪",
+        noImage: true
+    },
+    {
+        title: "Walmart Sales Drivers Analysis",
+        category: "python",
+        tag: "Python",
+        description: "Department-level analysis of 45 Walmart stores - store size vs. type, holiday uplift, and why regional economic indicators show no real signal.",
+        link: "https://github.com/PeterImoniose/Walmart-recruiting",
+        linkLabel: "View on GitHub",
+        icon: "🏬",
+        noImage: true
+    },
+    {
+        title: "Walmart Store Time Series Analysis",
+        category: "python",
+        tag: "Python",
+        description: "Same Walmart stores, a different question - per-store growth, volatility, and forecastability, including a seasonal-naive baseline check for a future forecasting model.",
+        link: "https://github.com/PeterImoniose/Walmart-Store",
+        linkLabel: "View on GitHub",
+        icon: "📈",
+        noImage: true
+    },
+    {
+        title: "Olist E-Commerce Analysis",
+        category: "python",
+        tag: "Python",
+        description: "Revenue, category, and geography analysis of a Brazilian e-commerce marketplace - and the standout finding that late delivery drives a 1.73-star review-score drop.",
+        link: "https://github.com/PeterImoniose/Olist",
+        linkLabel: "View on GitHub",
+        icon: "🛒",
+        noImage: true
+    },
+    {
+        title: "Company Registration Data Analysis",
+        category: "python",
+        tag: "Python",
+        description: "Sector, turnover, and growth analysis of UK company registration data - answering four set questions with data-driven corrections to initial hypotheses along the way.",
+        link: "https://github.com/PeterImoniose/Company-registration",
+        linkLabel: "View on GitHub",
+        icon: "🏛️",
+        noImage: true
     }
 
     /* Example of a future Power BI dashboard entry - copy this shape:
