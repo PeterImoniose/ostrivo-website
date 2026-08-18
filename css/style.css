@@ -205,21 +205,15 @@ img { max-width: 100%; display: block; }
     flex-wrap: wrap;
 }
 
-.hero-image-slot {
-    margin-top: 64px;
-    aspect-ratio: 16 / 8;
+.hero-screenshot {
+    display: block;
+    margin: 64px auto 0;
     max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: auto;
     border-radius: var(--radius);
-    border: 1px dashed var(--border);
-    background: linear-gradient(180deg, var(--bg-elevated), var(--bg-card));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-faint);
-    font-size: 0.9rem;
-    gap: 8px;
+    border: 1px solid var(--border);
+    box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.5);
 }
 
 /* ── Sections ────────────────────────────────────────────────────────────── */
