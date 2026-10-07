@@ -26,10 +26,12 @@ const PORTFOLIO_ITEMS = [
     {
         title: "Wind Turbine Predictive Maintenance",
         category: "python",
-        tag: "MSc Dissertation",
-        description: "A three-stage machine learning pipeline (anomaly detection, fault classification, cross-farm transfer validation) for predictive maintenance of wind turbines using SCADA sensor data, evaluated on the CARE benchmark.",
-        link: "https://github.com/PeterImoniose/care-wind-turbine-predictive-maintenance",
-        linkLabel: "View on GitHub",
+        tag: "MSc Dissertation - rebuilt as v2",
+        description: "Two-stage fault detection and fault localisation for wind turbines from SCADA sensor data on the CARE benchmark. Version 2 is a from-scratch rebuild of my MSc dissertation with a stricter, leak-free evaluation and a tested Python package - and it reports the lower, more defensible scores that came out.",
+        link: "https://github.com/PeterImoniose/care-wind-turbine-predictive-maintenance-v2",
+        linkLabel: "View v2 on GitHub",
+        secondaryLink: "https://github.com/PeterImoniose/care-wind-turbine-predictive-maintenance",
+        secondaryLinkLabel: "Original dissertation version",
         icon: "🌬️",
         noImage: true
     },
