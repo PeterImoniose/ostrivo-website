@@ -66,6 +66,16 @@ const PORTFOLIO_ITEMS = [
         noImage: true
     },
     {
+        title: "Water Pipe Leak Detection",
+        category: "python",
+        tag: "Python",
+        description: "Machine learning on accelerometer, pressure and hydrophone recordings from a public leak-detection benchmark. Models score 0.92 to 1.00 on a random split and fall to chance on a pipe layout they were not trained on - the analysis traces why, including an interference pattern hidden in the sensor data.",
+        link: "https://github.com/PeterImoniose/water-leak-detection-generalisation",
+        linkLabel: "View on GitHub",
+        icon: "💧",
+        noImage: true
+    },
+    {
         title: "Online Retail Sales Analysis",
         category: "python",
         tag: "Python",
