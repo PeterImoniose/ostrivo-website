@@ -34,10 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     }
 
+    // Always shown A-Z by title, so new entries can be added anywhere in portfolio-data.js.
+    const SORTED_ITEMS = [...PORTFOLIO_ITEMS].sort((a, b) =>
+        a.title.localeCompare(b.title, undefined, { sensitivity: 'base' })
+    );
+
     function render(filter) {
         const items = filter === 'all'
-            ? PORTFOLIO_ITEMS
-            : PORTFOLIO_ITEMS.filter(item => item.category === filter);
+            ? SORTED_ITEMS
+            : SORTED_ITEMS.filter(item => item.category === filter);
 
         grid.innerHTML = items.map(cardHtml).join('');
         if (emptyState) emptyState.style.display = items.length ? 'none' : 'block';

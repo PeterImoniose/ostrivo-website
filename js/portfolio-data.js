@@ -1,5 +1,6 @@
 /* Add new work here as you build it - each entry becomes a card on the
-   Portfolio page automatically. `category` must be one of: "powerbi", "python", "other" */
+   Portfolio page automatically, shown alphabetically by title (the order here doesn't matter).
+   `category` must be one of: "powerbi", "python", "other" */
 const PORTFOLIO_ITEMS = [
     {
         title: "Ostrivo",
