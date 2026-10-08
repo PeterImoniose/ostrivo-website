@@ -76,6 +76,16 @@ const PORTFOLIO_ITEMS = [
         noImage: true
     },
     {
+        title: "Subway Gate Motor Remaining Life Prediction",
+        category: "python",
+        tag: "Python",
+        description: "Predicting how many cycles a subway ticket gate motor has left, on the PHM Europe 2026 Data Challenge dataset. The analysis shows the door fails in sudden steps after a long silent plateau: once two steps are seen, 77% of predictions land within 20% of the true life, but before the first step no model beats a simple baseline - and a promising early-warning signal is tested and shown to be noise.",
+        link: "https://github.com/PeterImoniose/phm2026-door-rul-prediction",
+        linkLabel: "View on GitHub",
+        icon: "🚇",
+        noImage: true
+    },
+    {
         title: "Online Retail Sales Analysis",
         category: "python",
         tag: "Python",
