@@ -7,7 +7,7 @@
 <meta name="description" content="CV of Avwerosuo Peter Imoniose - data scientist with an MSc in Applied Data Science in Engineering. Experience, projects, skills and education.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=cv1">
+<link rel="stylesheet" href="css/style.css?v=cv2">
 </head>
 <body>
 
@@ -61,6 +61,8 @@
                 My projects focus on predictive maintenance, condition monitoring and business analytics,
                 and on validation that holds up: testing models on data they have never seen, checking for
                 shortcuts in the data, and reporting the results honestly, including when they are negative.
+                I don't treat a project as finished because it has been submitted or marked: I go back to my own
+                work, look for what was wrong with it, and rebuild it properly.
                 I also build and run <a href="ostrivo.html">Ostrivo</a>, a live business intelligence web app.
             </p>
             <div class="cv-stats">
@@ -166,6 +168,42 @@
                     <li>Maintained digital records, ran diagnostics, managed internal networks and trained junior staff in data handling.</li>
                 </ul>
             </article>
+        </section>
+
+        <!-- Revisiting finished work -->
+        <section class="cv-section">
+            <h2>Going back to finished work</h2>
+            <p>
+                Several of my projects were already submitted and marked when I returned to them. Each time
+                I reviewed the work as a critic would, wrote down what was wrong, and rebuilt it, keeping the
+                original public so the difference can be seen.
+            </p>
+            <div class="cv-revisits">
+                <article class="cv-revisit">
+                    <h3>Wind turbine predictive maintenance</h3>
+                    <div class="cv-revisit-meta">MSc dissertation, marked 80% &middot; rebuilt as <a href="https://github.com/PeterImoniose/care-wind-turbine-predictive-maintenance-v2" target="_blank" rel="noopener">v2</a></div>
+                    <p><strong>Found:</strong> parts of the evaluation were more generous than an operator would get: thresholds set on the events being scored, training data chosen using test labels, and an unverified scoring function.</p>
+                    <p><strong>Did:</strong> rebuilt it from scratch so no number depends on information an operator would not have had, tested the scoring code against the benchmark authors' reference, and added confidence intervals. The score fell from 0.655 to 0.619, and I report the lower one.</p>
+                </article>
+                <article class="cv-revisit">
+                    <h3>Fuel system condition monitoring</h3>
+                    <div class="cv-revisit-meta">Digital Twins module, marked 76% &middot; rebuilt as a <a href="https://github.com/PeterImoniose/fuel-system-digital-twin" target="_blank" rel="noopener">digital twin project</a></div>
+                    <p><strong>Found:</strong> a reversed severity axis, a pump model checked on its own training data and then used outside its speed range, a sign error in the app, and healthy limits set on raw samples. Every fault was also recorded at a different time of day, so a clock alone could name it 96% of the time.</p>
+                    <p><strong>Did:</strong> fixed each one and rebuilt the analysis around tests the clock cannot pass: physics indicators fitted without the fault being scored, and a classifier trained only on simulated faults.</p>
+                </article>
+                <article class="cv-revisit">
+                    <h3>Password protection system</h3>
+                    <div class="cv-revisit-meta">Early notebook prototype &middot; <a href="https://github.com/PeterImoniose/Password_protection_system" target="_blank" rel="noopener">rewritten</a></div>
+                    <p><strong>Found:</strong> the prototype worked but was not secure.</p>
+                    <p><strong>Did:</strong> rewrote it as a tested package with hashed and salted passwords, self-expiring lockout and recovery.</p>
+                </article>
+                <article class="cv-revisit">
+                    <h3>Subway gate motor remaining life</h3>
+                    <div class="cv-revisit-meta">PHM Europe 2026 Data Challenge &middot; <a href="https://github.com/PeterImoniose/phm2026-door-rul-prediction" target="_blank" rel="noopener">audited after release</a></div>
+                    <p><strong>Found:</strong> a flaw in the degradation-step detector, and one result that the statistics did not support.</p>
+                    <p><strong>Did:</strong> fixed the detector, re-ran the analysis and restated the unsupported result as unproven.</p>
+                </article>
+            </div>
         </section>
 
         <!-- Projects -->

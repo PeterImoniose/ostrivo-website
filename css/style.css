@@ -622,6 +622,27 @@ section { padding: 72px 0; }
     .cv-two > div + div { margin-top: 32px; }
 }
 
+.cv-revisits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.cv-revisit {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 12px;
+    padding: 18px 20px;
+}
+
+.cv-revisit h3 { font-size: 1rem; margin-bottom: 4px; }
+.cv-revisit-meta { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.cv-revisit p { font-size: 0.9rem; margin-bottom: 8px; }
+.cv-revisit p:last-child { margin-bottom: 0; }
+.cv-revisit strong { color: var(--text); }
+
 /* Print: a clean black-on-white CV */
 @media print {
     :root {
@@ -637,7 +658,7 @@ section { padding: 72px 0; }
     .cv-section h2 { font-size: 13pt; margin-bottom: 10px; }
     .cv-stats { display: none; }
     .cv-item { margin-bottom: 12px; break-inside: avoid; }
-    .cv-project, .cv-skills > div { padding: 8px 10px; break-inside: avoid; }
+    .cv-project, .cv-skills > div, .cv-revisit { padding: 8px 10px; break-inside: avoid; }
     .cv-projects, .cv-skills { gap: 8px; grid-template-columns: 1fr 1fr; }
     a { color: inherit; }
 }
