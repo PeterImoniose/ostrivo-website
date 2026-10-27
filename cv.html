@@ -3,13 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV - Avwerosuo Peter Imoniose</title>
-<meta name="description" content="CV of Avwerosuo Peter Imoniose - data scientist with an MSc in Applied Data Science in Engineering. Experience, projects, skills and education.">
+<title>Avwerosuo Peter Imoniose - Data Scientist CV</title>
+<meta name="description" content="Data scientist with an MSc in Applied Data Science in Engineering (Distinction). Predictive maintenance, condition monitoring and business analytics, validated on data the models have never seen.">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Avwerosuo Peter Imoniose - Data Scientist">
+<meta property="og:description" content="Interactive CV: experience, rebuilt projects, results and skills with evidence.">
+<meta property="og:url" content="https://ostrivo.app/cv.html">
+<meta property="og:image" content="https://ostrivo.app/assets/peter-headshot.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=cv2">
+<link rel="stylesheet" href="css/style.css?v=cv3">
+<link rel="stylesheet" href="css/cv.css?v=3">
+<script>document.documentElement.classList.add('js');</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Avwerosuo Peter Imoniose",
+  "jobTitle": "Data Scientist",
+  "email": "mailto:peterimoniose@live.com",
+  "url": "https://ostrivo.app/cv.html",
+  "image": "https://ostrivo.app/assets/peter-headshot.jpg",
+  "address": {"@type": "PostalAddress", "addressLocality": "East Kilbride, Glasgow", "addressCountry": "GB"},
+  "alumniOf": [
+    {"@type": "CollegeOrUniversity", "name": "Glasgow Caledonian University"},
+    {"@type": "CollegeOrUniversity", "name": "Delta State University"}
+  ],
+  "sameAs": ["https://github.com/PeterImoniose", "https://www.linkedin.com/in/avwerosuo-imoniose-bbb3b915a"]
+}
+</script>
 </head>
-<body>
+<body class="cv-page">
 
 <header class="site-header">
     <div class="container nav">
@@ -25,354 +49,648 @@
     </div>
 </header>
 
-<main class="cv">
-    <section class="hero cv-hero">
-        <div class="container">
-            <span class="eyebrow">Curriculum vitae</span>
+<main>
+
+<!-- ═════════ Hero ═════════ -->
+<section class="cvx-hero">
+    <div class="cvx-hero-bg" aria-hidden="true"></div>
+    <div class="container cvx-hero-grid">
+        <div class="cvx-hero-copy">
+            <span class="cvx-available"><span class="pulse" aria-hidden="true"></span>Open to data science roles &middot; UK right to work</span>
             <h1>Avwerosuo Peter Imoniose</h1>
-            <p class="lead">
-                Data scientist &middot; MSc Applied Data Science in Engineering (Distinction)
+            <p class="cvx-role">Data Scientist &middot; MSc Applied Data Science in Engineering, Distinction</p>
+            <p class="cvx-pitch">
+                I build models and data products that still work on data they have
+                <span class="hl">never seen</span>, and I say plainly when they don't.
             </p>
-            <ul class="cv-contact">
-                <li>East Kilbride, Glasgow, UK</li>
-                <li><a href="mailto:peterimoniose@live.com">peterimoniose@live.com</a></li>
-                <li><a href="https://www.linkedin.com/in/avwerosuo-imoniose-bbb3b915a" target="_blank" rel="noopener">LinkedIn</a></li>
-                <li><a href="https://github.com/PeterImoniose" target="_blank" rel="noopener">GitHub</a></li>
-            </ul>
-            <div class="hero-actions cv-actions">
-                <button type="button" class="btn btn-primary" onclick="window.print()">Print or save as PDF</button>
-                <a href="portfolio.html" class="btn btn-secondary">See the portfolio</a>
+            <div class="cvx-actions">
+                <button type="button" class="btn btn-primary" data-print>Download CV (PDF)</button>
+                <a class="btn btn-secondary" href="mailto:peterimoniose@live.com">Email me</a>
             </div>
+            <ul class="cvx-links">
+                <li><a href="https://www.linkedin.com/in/avwerosuo-imoniose-bbb3b915a" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+                <li><a href="https://github.com/PeterImoniose" target="_blank" rel="noopener">GitHub ↗</a></li>
+                <li><a href="portfolio.html">Portfolio →</a></li>
+                <li class="cvx-loc">East Kilbride, Glasgow, UK</li>
+            </ul>
         </div>
-    </section>
+        <div class="cvx-hero-visual" aria-hidden="true">
+            <div class="cvx-ring">
+                <img src="assets/peter-headshot.jpg" alt="">
+            </div>
+            <div class="cvx-float f1"><b>0.619</b><span>CARE score, 95 datasets</span></div>
+            <div class="cvx-float f2"><b>0.87</b><span>F1 from simulation only</span></div>
+            <div class="cvx-float f3"><b>Accepted</b><span>euspen SIC 2026 paper</span></div>
+        </div>
+    </div>
 
-    <div class="container cv-body">
+    <div class="container">
+        <div class="cvx-stats">
+            <div class="cvx-stat"><span class="num" data-count="80" data-suffix="%">80%</span><span class="lbl">MSc dissertation</span></div>
+            <div class="cvx-stat"><span class="num" data-count="90" data-suffix="%">90%</span><span class="lbl">practical engineering</span></div>
+            <div class="cvx-stat"><span class="num" data-count="15" data-suffix="">15</span><span class="lbl">projects below</span></div>
+            <div class="cvx-stat"><span class="num" data-count="5" data-suffix="">5</span><span class="lbl">finished projects rebuilt</span></div>
+            <div class="cvx-stat"><span class="num" data-count="1" data-suffix="">1</span><span class="lbl">live product, real users</span></div>
+            <div class="cvx-stat"><span class="num" data-count="1" data-suffix="">1</span><span class="lbl">conference paper accepted</span></div>
+        </div>
+    </div>
+</section>
 
-        <!-- Summary -->
-        <section class="cv-section">
-            <h2>Profile</h2>
-            <p>
-                Data scientist with an MSc in Applied Data Science in Engineering and a mathematical
-                foundation from a BSc in Industrial Mathematics. I work across the whole data workflow:
-                collecting, auditing and cleaning messy data, building Python and SQL pipelines, modelling,
-                and reporting through dashboards and presentations that non-technical people can act on.
+<!-- ═════════ Body: sticky nav + content ═════════ -->
+<div class="container cvx-layout">
+
+    <nav class="cvx-nav" aria-label="CV sections">
+        <ol>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#rebuilds">Rebuilds</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ol>
+    </nav>
+
+    <div class="cvx-content">
+
+        <!-- Profile -->
+        <section id="profile" class="cvx-section reveal">
+            <span class="cvx-kicker">01 &middot; Profile</span>
+            <h2>Engineering data, business questions, honest answers</h2>
+            <p class="cvx-lede">
+                Data scientist with an MSc in Applied Data Science in Engineering and a BSc in Industrial
+                Mathematics. I work across the whole data workflow: auditing and cleaning messy data,
+                building Python and SQL pipelines, modelling, and reporting through dashboards and
+                presentations that non-technical people can act on.
             </p>
             <p>
-                My projects focus on predictive maintenance, condition monitoring and business analytics,
-                and on validation that holds up: testing models on data they have never seen, checking for
-                shortcuts in the data, and reporting the results honestly, including when they are negative.
-                I don't treat a project as finished because it has been submitted or marked: I go back to my own
-                work, look for what was wrong with it, and rebuild it properly.
-                I also build and run <a href="ostrivo.html">Ostrivo</a>, a live business intelligence web app.
+                Most of my work is predictive maintenance, condition monitoring and business analytics.
+                I don't treat a project as finished because it has been submitted or marked: I go back,
+                look for what was wrong with it, and rebuild it properly. I also build and run
+                <a href="ostrivo.html">Ostrivo</a>, a live business intelligence web app.
             </p>
-            <div class="cv-stats">
-                <div><div class="stat-value">80%</div><div class="stat-label">MSc dissertation (Distinction)</div></div>
-                <div><div class="stat-value">15+</div><div class="stat-label">public projects on GitHub</div></div>
-                <div><div class="stat-value">1</div><div class="stat-label">conference paper accepted (euspen SIC 2026)</div></div>
-                <div><div class="stat-value">1</div><div class="stat-label">live product with real users</div></div>
+            <div class="cvx-values">
+                <div class="cvx-value">
+                    <span class="ico" aria-hidden="true">◎</span>
+                    <h3>Validation that holds up</h3>
+                    <p>Held-out groups, shortcut tests and confidence intervals, so a score means what it says.</p>
+                </div>
+                <div class="cvx-value">
+                    <span class="ico" aria-hidden="true">⟲</span>
+                    <h3>End to end</h3>
+                    <p>From raw files to a tested package, a dashboard, a deployed app or a slide deck.</p>
+                </div>
+                <div class="cvx-value">
+                    <span class="ico" aria-hidden="true">✦</span>
+                    <h3>Clear communication</h3>
+                    <p>Findings written for the people who make the decision, negative results included.</p>
+                </div>
             </div>
         </section>
 
         <!-- Experience -->
-        <section class="cv-section">
-            <h2>Experience</h2>
+        <section id="experience" class="cvx-section reveal">
+            <span class="cvx-kicker">02 &middot; Experience</span>
+            <h2>Where I've worked</h2>
 
-            <article class="cv-item">
-                <div class="cv-item-head">
-                    <div>
-                        <h3>Founder and Developer</h3>
-                        <div class="cv-org">Ostrivo, Glasgow</div>
+            <ol class="cvx-timeline">
+                <li class="cvx-job">
+                    <div class="cvx-job-when">
+                        <span class="d">Aug 2026 - Present</span>
+                        <span class="dur" data-start="2026-08" data-end="present"></span>
                     </div>
-                    <span class="cv-date">Aug 2026 - Present</span>
-                </div>
-                <ul>
-                    <li>Designed, built and deployed Ostrivo end to end: a business intelligence web app that turns an uploaded CSV or Excel file into a cleaned dataset, dashboards, anomaly detection, forecasts and a plain-English summary.</li>
-                    <li>Built the analysis engine in Python (pandas, scikit-learn, Plotly) and the app in Streamlit, with multi-user accounts, email-code sign-up on a custom domain and PDF export.</li>
-                    <li>Tested the engine against five real public sales datasets, which found and fixed three analysis bugs before users hit them.</li>
-                    <li>Built and run the product website and portfolio at ostrivo.app (HTML, CSS, JavaScript).</li>
-                </ul>
-            </article>
+                    <div class="cvx-job-card">
+                        <div class="cvx-job-head">
+                            <h3>Founder and Developer</h3>
+                            <span class="cvx-org">Ostrivo &middot; Glasgow</span>
+                        </div>
+                        <p class="cvx-job-sum">Designed, built and deployed a business intelligence web app end to end.</p>
+                        <ul>
+                            <li>Upload a CSV or Excel file and get a cleaned dataset, dashboards, anomaly detection, forecasts and a plain-English summary.</li>
+                            <li>Analysis engine in Python (pandas, scikit-learn, Plotly); Streamlit app with multi-user accounts, email-code sign-up on a custom domain and PDF export.</li>
+                            <li>Tested the engine against five real public sales datasets, which found and fixed three analysis bugs before users hit them.</li>
+                            <li>Built and run the product site and portfolio at ostrivo.app.</li>
+                        </ul>
+                        <div class="cvx-tags"><span>Python</span><span>Streamlit</span><span>pandas</span><span>Plotly</span><span>HTML/CSS/JS</span></div>
+                    </div>
+                </li>
 
-            <article class="cv-item">
-                <div class="cv-item-head">
-                    <div>
-                        <h3>Research Data Scientist (MSc research)</h3>
-                        <div class="cv-org">Glasgow Caledonian University, Glasgow</div>
+                <li class="cvx-job">
+                    <div class="cvx-job-when">
+                        <span class="d">Jan 2025 - Jun 2026</span>
+                        <span class="dur" data-start="2025-01" data-end="2026-06"></span>
                     </div>
-                    <span class="cv-date">Jan 2025 - Jun 2026</span>
-                </div>
-                <ul>
-                    <li>Built a two-stage predictive maintenance pipeline on SCADA data from 36 wind turbines across three wind farms (95 datasets, 89 turbine-years): automated ingestion, validation, feature engineering, fault detection and fault localisation.</li>
-                    <li>Later rebuilt it under a strict protocol where no result uses information an operator would not have had: a CARE benchmark score of 0.619 over all 95 datasets, against 0.66 for the published model that was tuned on the same data.</li>
-                    <li>On the best-instrumented farm, the faulty subsystem is in the model's top three for 64% of faults, against 33% by chance.</li>
-                    <li>Research accepted for publication at the euspen Special Interest Conference on Precision Engineering for Sustainability (SIC 2026).</li>
-                    <li>Led data quality and completeness analysis across multiple data sources, finding and resolving integrity issues that affected model performance.</li>
-                    <li>Built interactive HTML dashboards and presentations that turned the findings into clear, decision-ready insight.</li>
-                </ul>
-            </article>
+                    <div class="cvx-job-card">
+                        <div class="cvx-job-head">
+                            <h3>Research Data Scientist (MSc research)</h3>
+                            <span class="cvx-org">Glasgow Caledonian University &middot; Glasgow</span>
+                        </div>
+                        <p class="cvx-job-sum">Predictive maintenance for wind turbines from SCADA data: 36 turbines, three wind farms, 95 datasets.</p>
+                        <ul>
+                            <li>Built a two-stage pipeline (fault detection, then fault localisation) with automated ingestion, validation and feature engineering.</li>
+                            <li>Rebuilt it under a strict protocol where no result uses information an operator would not have had: a CARE score of 0.619 over all 95 datasets, against 0.66 for the published model tuned on the same data.</li>
+                            <li>On the best-instrumented farm, the faulty subsystem is in the model's top three for 64% of faults, against 33% by chance.</li>
+                            <li>Research accepted for publication at the euspen SIC 2026 conference.</li>
+                        </ul>
+                        <div class="cvx-tags"><span>Python</span><span>PyTorch</span><span>PCA</span><span>SCADA</span><span>pytest</span></div>
+                    </div>
+                </li>
 
-            <article class="cv-item">
-                <div class="cv-item-head">
-                    <div>
-                        <h3>Personal Assistant / Care and Support Worker</h3>
-                        <div class="cv-org">Enable Cares (formerly The Mungo Foundation), Glasgow</div>
+                <li class="cvx-job">
+                    <div class="cvx-job-when">
+                        <span class="d">Aug 2023 - Jan 2025</span>
+                        <span class="dur" data-start="2023-08" data-end="2025-01"></span>
                     </div>
-                    <span class="cv-date">Jun 2025 - Present</span>
-                </div>
-                <ul>
-                    <li>Keep accurate, structured digital records in dementia and mental health care settings, in line with GDPR, data governance policy and SSSC standards.</li>
-                    <li>Write evidence-based reports and handovers used by multidisciplinary teams for care planning.</li>
-                </ul>
-            </article>
+                    <div class="cvx-job-card">
+                        <div class="cvx-job-head">
+                            <h3>Junior Data Scientist</h3>
+                            <span class="cvx-org">Early Code &middot; Abuja, Nigeria</span>
+                        </div>
+                        <p class="cvx-job-sum">Client analytics: pipelines, dashboards and models across several projects at once.</p>
+                        <ul>
+                            <li>Automated Python ETL workflows that cut manual data preparation by 25% and made outputs consistent across client projects.</li>
+                            <li>Queried and transformed relational data in SQL for reporting and business analysis.</li>
+                            <li>Built Power BI dashboards and Plotly visualisations for live KPI monitoring.</li>
+                            <li>Applied regression, classification and hypothesis testing to client problems; mentored junior colleagues in Python.</li>
+                        </ul>
+                        <div class="cvx-tags"><span>Python</span><span>SQL</span><span>Power BI</span><span>Plotly</span><span>scikit-learn</span></div>
+                    </div>
+                </li>
+            </ol>
 
-            <article class="cv-item">
-                <div class="cv-item-head">
-                    <div>
-                        <h3>Junior Data Scientist</h3>
-                        <div class="cv-org">Early Code, Abuja, Nigeria</div>
-                    </div>
-                    <span class="cv-date">Aug 2023 - Jan 2025</span>
+            <h3 class="cvx-subhead">Other roles</h3>
+            <div class="cvx-other">
+                <div class="cvx-other-item">
+                    <span class="d">Jun 2025 - Present</span>
+                    <h4>Personal Assistant / Care and Support Worker</h4>
+                    <span class="cvx-org">Enable Cares (formerly The Mungo Foundation), Glasgow</span>
+                    <p>Accurate, structured records in regulated care settings, in line with GDPR and SSSC standards; evidence-based reports for multidisciplinary teams.</p>
                 </div>
-                <ul>
-                    <li>Designed and automated Python ETL workflows that cut manual data preparation by 25% and made outputs consistent across several client projects.</li>
-                    <li>Queried, transformed and analysed relational data in SQL for reporting and business analysis.</li>
-                    <li>Built Power BI dashboards and Plotly visualisations for live KPI monitoring.</li>
-                    <li>Applied regression, classification and hypothesis testing to client problems and presented the results to stakeholders; mentored junior colleagues in Python.</li>
-                </ul>
-            </article>
-
-            <article class="cv-item">
-                <div class="cv-item-head">
-                    <div>
-                        <h3>Data Entry and Records Assistant</h3>
-                        <div class="cv-org">Public sector organisation, Nigeria</div>
-                    </div>
-                    <span class="cv-date">Nov 2018 - Jun 2023</span>
+                <div class="cvx-other-item">
+                    <span class="d">Nov 2018 - Jun 2023</span>
+                    <h4>Data Entry and Records Assistant</h4>
+                    <span class="cvx-org">Public sector organisation, Nigeria</span>
+                    <p>Maintained and reconciled large administrative and financial datasets under audit requirements; cost analysis reports for senior management.</p>
                 </div>
-                <ul>
-                    <li>Maintained and reconciled large administrative and financial datasets under audit and compliance requirements.</li>
-                    <li>Produced structured cost analysis reports for senior management.</li>
-                </ul>
-            </article>
-
-            <article class="cv-item">
-                <div class="cv-item-head">
-                    <div>
-                        <h3>Lead Computer Operator</h3>
-                        <div class="cv-org">Blended Technology Solutions, Delta State, Nigeria</div>
-                    </div>
-                    <span class="cv-date">Mar 2015 - Oct 2018</span>
+                <div class="cvx-other-item">
+                    <span class="d">Mar 2015 - Oct 2018</span>
+                    <h4>Lead Computer Operator</h4>
+                    <span class="cvx-org">Blended Technology Solutions, Delta State, Nigeria</span>
+                    <p>Led a 7-person technical team that brought a system back into service after two years out of use; trained junior staff in data handling.</p>
                 </div>
-                <ul>
-                    <li>Led a 7-person technical team that brought a system back into service after two years out of use.</li>
-                    <li>Maintained digital records, ran diagnostics, managed internal networks and trained junior staff in data handling.</li>
-                </ul>
-            </article>
+            </div>
         </section>
 
-        <!-- Revisiting finished work -->
-        <section class="cv-section">
-            <h2>Going back to finished work</h2>
-            <p>
-                Several of my projects were already submitted and marked when I returned to them. Each time
-                I reviewed the work as a critic would, wrote down what was wrong, and rebuilt it, keeping the
-                original public so the difference can be seen.
+        <!-- Rebuilds -->
+        <section id="rebuilds" class="cvx-section reveal">
+            <span class="cvx-kicker">03 &middot; Going back to finished work</span>
+            <h2>Submitted, marked, and then improved</h2>
+            <p class="cvx-lede">
+                Several of these projects were already handed in and marked when I went back to them.
+                I reviewed each one as a critic would, wrote down what was wrong and rebuilt it, keeping
+                the original public so the difference can be checked. <span class="screen-only">Switch each card between
+                <b>Before</b> and <b>After</b>.</span>
             </p>
-            <div class="cv-revisits">
-                <article class="cv-revisit">
-                    <h3>Wind turbine predictive maintenance</h3>
-                    <div class="cv-revisit-meta">MSc dissertation, marked 80% &middot; rebuilt as <a href="https://github.com/PeterImoniose/care-wind-turbine-predictive-maintenance-v2" target="_blank" rel="noopener">v2</a></div>
-                    <p><strong>Found:</strong> parts of the evaluation were more generous than an operator would get: thresholds set on the events being scored, training data chosen using test labels, and an unverified scoring function.</p>
-                    <p><strong>Did:</strong> rebuilt it from scratch so no number depends on information an operator would not have had, tested the scoring code against the benchmark authors' reference, and added confidence intervals. The score fell from 0.655 to 0.619, and I report the lower one.</p>
+
+            <div class="cvx-rebuilds">
+                <article class="rb" data-view="after">
+                    <header class="rb-head">
+                        <div>
+                            <h3>Wind turbine predictive maintenance</h3>
+                            <span class="rb-meta">MSc dissertation, marked 80%</span>
+                        </div>
+                        <div class="rb-toggle" role="group" aria-label="Show before or after">
+                            <button type="button" data-set="before">Before</button>
+                            <button type="button" data-set="after">After</button>
+                        </div>
+                    </header>
+                    <div class="rb-chart" aria-label="CARE score: original 0.655, rebuilt 0.619, published model 0.66, coin flip 0.50">
+                        <div class="rb-bar-row">
+                            <span class="rb-bar-lbl">Original</span>
+                            <div class="rb-track"><div class="rb-bar old" style="--v:0.655"></div></div>
+                            <span class="rb-bar-val">0.655</span>
+                        </div>
+                        <div class="rb-bar-row">
+                            <span class="rb-bar-lbl">Rebuilt</span>
+                            <div class="rb-track"><div class="rb-bar new" style="--v:0.619"></div><div class="rb-ci" style="--lo:0.56;--hi:0.68"></div></div>
+                            <span class="rb-bar-val">0.619</span>
+                        </div>
+                        <div class="rb-axis"><span style="--v:0.50">0.50 chance</span><span style="--v:0.66">0.66 published</span></div>
+                    </div>
+                    <div class="rb-pane rb-before">
+                        <span class="rb-label">What I found</span>
+                        <ul>
+                            <li>Thresholds and training length set by hand on the same events that were then scored.</li>
+                            <li>Test labels decided which data a model was trained on.</li>
+                            <li>A hand-written, unverified version of the benchmark's scoring function.</li>
+                        </ul>
+                    </div>
+                    <div class="rb-pane rb-after">
+                        <span class="rb-label">What I did</span>
+                        <ul>
+                            <li>Rebuilt from scratch so no number uses information an operator would not have had.</li>
+                            <li>Tested the scoring code against the benchmark authors' reference on random inputs.</li>
+                            <li>Added bootstrap intervals and three seeds. The score fell to 0.619, and I report it.</li>
+                        </ul>
+                    </div>
+                    <footer class="rb-links"><a href="https://github.com/PeterImoniose/care-wind-turbine-predictive-maintenance" target="_blank" rel="noopener">Original ↗</a><a href="https://github.com/PeterImoniose/care-wind-turbine-predictive-maintenance-v2" target="_blank" rel="noopener">Rebuild ↗</a></footer>
                 </article>
-                <article class="cv-revisit">
-                    <h3>Fuel system condition monitoring</h3>
-                    <div class="cv-revisit-meta">Digital Twins module, marked 76% &middot; rebuilt as a <a href="https://github.com/PeterImoniose/fuel-system-digital-twin" target="_blank" rel="noopener">digital twin project</a></div>
-                    <p><strong>Found:</strong> a reversed severity axis, a pump model checked on its own training data and then used outside its speed range, a sign error in the app, and healthy limits set on raw samples. Every fault was also recorded at a different time of day, so a clock alone could name it 96% of the time.</p>
-                    <p><strong>Did:</strong> fixed each one and rebuilt the analysis around tests the clock cannot pass: physics indicators fitted without the fault being scored, and a classifier trained only on simulated faults.</p>
+
+                <article class="rb" data-view="after">
+                    <header class="rb-head">
+                        <div>
+                            <h3>Fuel system condition monitoring</h3>
+                            <span class="rb-meta">Digital Twins module, 76%</span>
+                        </div>
+                        <div class="rb-toggle" role="group" aria-label="Show before or after">
+                            <button type="button" data-set="before">Before</button>
+                            <button type="button" data-set="after">After</button>
+                        </div>
+                    </header>
+                    <div class="rb-callout"><b>96%</b><span>accuracy from the clock alone: every fault was recorded at a different time of day</span></div>
+                    <div class="rb-pane rb-before">
+                        <span class="rb-label">What I found</span>
+                        <ul>
+                            <li>A reversed severity axis and a sign error in the app.</li>
+                            <li>A pump model checked on its own training data, then used outside its speed range.</li>
+                            <li>Healthy limits set on raw samples, 2 to 14 times too wide.</li>
+                        </ul>
+                    </div>
+                    <div class="rb-pane rb-after">
+                        <span class="rb-label">What I did</span>
+                        <ul>
+                            <li>Fixed each one and rebuilt the analysis around tests the clock cannot pass.</li>
+                            <li>Physics indicators fitted without the fault being scored tell all five faults apart.</li>
+                            <li>A classifier trained only on simulated faults scores macro F1 0.87 on the real rig.</li>
+                        </ul>
+                    </div>
+                    <footer class="rb-links"><a href="https://github.com/PeterImoniose/Analysis-of-the-condition-of-a-fuel-system" target="_blank" rel="noopener">Original ↗</a><a href="https://github.com/PeterImoniose/fuel-system-digital-twin" target="_blank" rel="noopener">Rebuild ↗</a></footer>
                 </article>
-                <article class="cv-revisit">
-                    <h3>Password protection system</h3>
-                    <div class="cv-revisit-meta">Early notebook prototype &middot; <a href="https://github.com/PeterImoniose/Password_protection_system" target="_blank" rel="noopener">rewritten</a></div>
-                    <p><strong>Found:</strong> the prototype worked but was not secure.</p>
-                    <p><strong>Did:</strong> rewrote it as a tested package with hashed and salted passwords, self-expiring lockout and recovery.</p>
+
+                <article class="rb" data-view="after">
+                    <header class="rb-head">
+                        <div>
+                            <h3>Subway gate motor remaining life</h3>
+                            <span class="rb-meta">PHM Europe 2026 Data Challenge</span>
+                        </div>
+                        <div class="rb-toggle" role="group" aria-label="Show before or after">
+                            <button type="button" data-set="before">Before</button>
+                            <button type="button" data-set="after">After</button>
+                        </div>
+                    </header>
+                    <div class="rb-pane rb-before">
+                        <span class="rb-label">What I found</span>
+                        <ul>
+                            <li>A flaw in the detector for the motor's sudden degradation steps.</li>
+                            <li>One reported result the statistics did not support.</li>
+                        </ul>
+                    </div>
+                    <div class="rb-pane rb-after">
+                        <span class="rb-label">What I did</span>
+                        <ul>
+                            <li>Fixed the detector and re-ran every result.</li>
+                            <li>Restated the unsupported result as unproven, in the published README.</li>
+                        </ul>
+                    </div>
+                    <footer class="rb-links"><a href="https://github.com/PeterImoniose/phm2026-door-rul-prediction" target="_blank" rel="noopener">Project ↗</a></footer>
                 </article>
-                <article class="cv-revisit">
-                    <h3>Subway gate motor remaining life</h3>
-                    <div class="cv-revisit-meta">PHM Europe 2026 Data Challenge &middot; <a href="https://github.com/PeterImoniose/phm2026-door-rul-prediction" target="_blank" rel="noopener">audited after release</a></div>
-                    <p><strong>Found:</strong> a flaw in the degradation-step detector, and one result that the statistics did not support.</p>
-                    <p><strong>Did:</strong> fixed the detector, re-ran the analysis and restated the unsupported result as unproven.</p>
+
+                <article class="rb" data-view="after">
+                    <header class="rb-head">
+                        <div>
+                            <h3>Password protection system</h3>
+                            <span class="rb-meta">Early notebook prototype</span>
+                        </div>
+                        <div class="rb-toggle" role="group" aria-label="Show before or after">
+                            <button type="button" data-set="before">Before</button>
+                            <button type="button" data-set="after">After</button>
+                        </div>
+                    </header>
+                    <div class="rb-pane rb-before">
+                        <span class="rb-label">What I found</span>
+                        <ul>
+                            <li>It worked, but it was not secure enough to trust with a real password.</li>
+                        </ul>
+                    </div>
+                    <div class="rb-pane rb-after">
+                        <span class="rb-label">What I did</span>
+                        <ul>
+                            <li>Rewrote it as a tested package: hashed and salted passwords, self-expiring lockout and recovery.</li>
+                        </ul>
+                    </div>
+                    <footer class="rb-links"><a href="https://github.com/PeterImoniose/Password_protection_system" target="_blank" rel="noopener">Project ↗</a></footer>
+                </article>
+
+                <article class="rb" data-view="after">
+                    <header class="rb-head">
+                        <div>
+                            <h3>Airbnb Rio de Janeiro analysis</h3>
+                            <span class="rb-meta">MSc coursework analysis</span>
+                        </div>
+                        <div class="rb-toggle" role="group" aria-label="Show before or after">
+                            <button type="button" data-set="before">Before</button>
+                            <button type="button" data-set="after">After</button>
+                        </div>
+                    </header>
+                    <div class="rb-pane rb-before">
+                        <span class="rb-label">What I found</span>
+                        <ul>
+                            <li>Notebook cells that only ran in a particular order, and file paths that only worked in Colab.</li>
+                            <li>A dataset merge described as doing more than it did.</li>
+                        </ul>
+                    </div>
+                    <div class="rb-pane rb-after">
+                        <span class="rb-label">What I did</span>
+                        <ul>
+                            <li>Made it run top to bottom on any machine and corrected the claim.</li>
+                        </ul>
+                    </div>
+                    <footer class="rb-links"><a href="https://github.com/PeterImoniose/Airbnb" target="_blank" rel="noopener">Project ↗</a></footer>
                 </article>
             </div>
         </section>
 
         <!-- Projects -->
-        <section class="cv-section">
-            <h2>Selected projects</h2>
-            <p class="cv-note">All public projects have their code, notebooks and findings on GitHub. Full cards are on the <a href="portfolio.html">portfolio page</a>.</p>
+        <section id="projects" class="cvx-section reveal">
+            <span class="cvx-kicker">04 &middot; Projects</span>
+            <h2>Selected work, with the result up front</h2>
 
-            <h4 class="cv-group">Predictive maintenance and engineering analytics</h4>
-            <div class="cv-projects">
-                <article class="cv-project">
-                    <h3><a href="https://github.com/PeterImoniose/care-wind-turbine-predictive-maintenance-v2" target="_blank" rel="noopener">Wind turbine predictive maintenance (v2)</a></h3>
-                    <p>A from-scratch rebuild of my dissertation with a leak-free evaluation and a tested Python package. CARE score 0.619 over all 95 benchmark datasets, and fault localisation about twice as accurate as chance on the best-instrumented farm.</p>
-                    <div class="cv-tech">Python &middot; PyTorch &middot; PCA &middot; bootstrap intervals &middot; pytest</div>
+            <div class="cvx-filters" role="group" aria-label="Filter projects">
+                <button type="button" class="chip is-on" data-domain="all">All</button>
+                <button type="button" class="chip" data-domain="maint">Engineering and maintenance</button>
+                <button type="button" class="chip" data-domain="biz">Business analytics</button>
+                <button type="button" class="chip" data-domain="prod">Products and software</button>
+            </div>
+            <div class="cvx-skill-banner" hidden>
+                <span class="msg"></span>
+                <button type="button" class="clear">Clear ✕</button>
+            </div>
+
+            <div class="cvx-projects">
+                <article class="pj pj-feature" data-domain="prod" data-skills="python pandas sklearn plotly streamlit pipelines testing deploy">
+                    <a class="pj-shot" href="ostrivo.html"><img src="assets/ostrivo-dashboard-screenshot.png" alt="Ostrivo dashboard screenshot" loading="lazy"></a>
+                    <div class="pj-body">
+                        <span class="pj-metric"><b>Live</b> product with real users</span>
+                        <h3><a href="ostrivo.html">Ostrivo</a></h3>
+                        <p>Business intelligence for people who have data but no analyst: upload a file, get dashboards, anomaly detection, forecasts and a plain-English executive summary.</p>
+                        <div class="cvx-tags"><span>Python</span><span>Streamlit</span><span>pandas</span><span>Plotly</span></div>
+                    </div>
                 </article>
-                <article class="cv-project">
+
+                <article class="pj" data-domain="maint" data-skills="python pandas pytorch pca validation testing pipelines matplotlib">
+                    <span class="pj-metric"><b>0.619</b> CARE, all 95 datasets</span>
+                    <h3><a href="https://github.com/PeterImoniose/care-wind-turbine-predictive-maintenance-v2" target="_blank" rel="noopener">Wind turbine predictive maintenance</a></h3>
+                    <p>Fault detection and localisation from SCADA data, rebuilt with a leak-free evaluation and a tested Python package.</p>
+                    <div class="cvx-tags"><span>PyTorch</span><span>PCA</span><span>pytest</span></div>
+                </article>
+
+                <article class="pj" data-domain="maint" data-skills="python pandas scipy gp monitoring validation testing streamlit signal sklearn matplotlib">
+                    <span class="pj-metric"><b>0.87</b> F1, trained on simulation only</span>
                     <h3><a href="https://github.com/PeterImoniose/fuel-system-digital-twin" target="_blank" rel="noopener">Fuel system digital twin</a></h3>
-                    <p>Physics-based health indicators that tell five faults apart, a pump model checked against its datasheet, and live monitoring. A classifier trained only on simulated faults reaches macro F1 0.87 on the real rig.</p>
-                    <div class="cv-tech">Python &middot; SciPy &middot; Gaussian processes &middot; Kalman filters &middot; Streamlit</div>
+                    <p>Physics-based health indicators, a datasheet-checked pump model and live monitoring with change detection and Kalman tracking.</p>
+                    <div class="cvx-tags"><span>SciPy</span><span>Gaussian processes</span><span>Kalman</span></div>
                 </article>
-                <article class="cv-project">
+
+                <article class="pj" data-domain="maint" data-skills="python pandas lightgbm survival validation matplotlib">
+                    <span class="pj-metric"><b>77%</b> within 20% of true life</span>
                     <h3><a href="https://github.com/PeterImoniose/phm2026-door-rul-prediction" target="_blank" rel="noopener">Subway gate motor remaining life</a></h3>
-                    <p>PHM Europe 2026 Data Challenge. Once two degradation steps are seen, 77% of life predictions land within 20% of the truth; before that, nothing beats a simple baseline, and the analysis says so.</p>
-                    <div class="cv-tech">Python &middot; LightGBM &middot; survival analysis</div>
+                    <p>PHM Europe 2026 Data Challenge. Accurate once two degradation steps are seen; before that, honestly no better than a baseline.</p>
+                    <div class="cvx-tags"><span>LightGBM</span><span>Survival analysis</span></div>
                 </article>
-                <article class="cv-project">
+
+                <article class="pj" data-domain="maint" data-skills="python pandas lightgbm pytorch signal validation sklearn">
+                    <span class="pj-metric"><b>1.00 → chance</b> on an unseen layout</span>
                     <h3><a href="https://github.com/PeterImoniose/water-leak-detection-generalisation" target="_blank" rel="noopener">Water pipe leak detection</a></h3>
-                    <p>Accelerometer, pressure and hydrophone data. Models score 0.92-1.00 on a random split and fall to chance on an unseen pipe layout; the analysis traces why.</p>
-                    <div class="cv-tech">Python &middot; signal processing &middot; LightGBM &middot; PyTorch</div>
+                    <p>Accelerometer, pressure and hydrophone data. Explains why near-perfect random-split scores collapse on a new pipe layout.</p>
+                    <div class="cvx-tags"><span>Signal processing</span><span>LightGBM</span></div>
                 </article>
-                <article class="cv-project">
+
+                <article class="pj" data-domain="maint" data-skills="python pandas sklearn stats chartjs">
+                    <span class="pj-metric"><b>No signal</b> found, and proven</span>
                     <h3><a href="https://github.com/PeterImoniose/Industrial-Pump-Maintenance-Analysis" target="_blank" rel="noopener">Industrial pump fleet analysis</a></h3>
-                    <p>Statistical testing (t-tests, Cohen's d) and three classifiers on a large pump sensor dataset, with a Chart.js dashboard. Shows the sensors carry no real maintenance signal before anyone deploys a model on them.</p>
-                    <div class="cv-tech">Python &middot; scikit-learn &middot; Chart.js</div>
+                    <p>t-tests, effect sizes and three classifiers show the sensors carry no maintenance signal, before anyone deploys a model on them.</p>
+                    <div class="cvx-tags"><span>scikit-learn</span><span>Chart.js</span></div>
                 </article>
-            </div>
 
-            <h4 class="cv-group">Business and sales analytics</h4>
-            <div class="cv-projects">
-                <article class="cv-project">
+                <article class="pj" data-domain="biz" data-skills="python pandas stats matplotlib">
+                    <span class="pj-metric"><b>-1.73</b> stars for late delivery</span>
                     <h3><a href="https://github.com/PeterImoniose/Olist" target="_blank" rel="noopener">Olist e-commerce</a></h3>
-                    <p>Revenue, category and geography analysis of a Brazilian marketplace; late delivery drives a 1.73-star drop in review score.</p>
-                    <div class="cv-tech">Python &middot; pandas</div>
+                    <p>Revenue, category and geography analysis of a Brazilian marketplace.</p>
+                    <div class="cvx-tags"><span>pandas</span><span>Statistics</span></div>
                 </article>
-                <article class="cv-project">
-                    <h3><a href="https://github.com/PeterImoniose/Rossmann" target="_blank" rel="noopener">Rossmann store sales</a></h3>
-                    <p>What drives daily sales across 1,115 drugstores: a 38.8% promotion uplift, store type and seasonality, while competitor distance does not matter.</p>
-                    <div class="cv-tech">Python &middot; pandas</div>
-                </article>
-                <article class="cv-project">
-                    <h3><a href="https://github.com/PeterImoniose/Walmart-recruiting" target="_blank" rel="noopener">Walmart sales drivers</a> and <a href="https://github.com/PeterImoniose/Walmart-Store" target="_blank" rel="noopener">time series</a></h3>
-                    <p>Department and store-level analysis of 45 stores: holiday uplift, size against type, and per-store growth, volatility and forecastability.</p>
-                    <div class="cv-tech">Python &middot; pandas &middot; time series</div>
-                </article>
-                <article class="cv-project">
-                    <h3><a href="https://github.com/PeterImoniose/Online-Retail-Analysis" target="_blank" rel="noopener">Online retail sales and RFM</a></h3>
-                    <p>Two years of real UK retailer transactions: revenue, seasonality, country mix and RFM customer segmentation.</p>
-                    <div class="cv-tech">Python &middot; pandas</div>
-                </article>
-                <article class="cv-project">
-                    <h3><a href="https://github.com/PeterImoniose/Airbnb" target="_blank" rel="noopener">Airbnb Rio de Janeiro</a> and <a href="https://github.com/PeterImoniose/Company-registration" target="_blank" rel="noopener">UK company registrations</a></h3>
-                    <p>Exploratory analysis of short-let listings and pricing, and of UK companies by sector, turnover and growth.</p>
-                    <div class="cv-tech">Python &middot; pandas &middot; visualisation</div>
-                </article>
-                <article class="cv-project">
-                    <h3>Bank telemarketing success prediction</h3>
-                    <p>Classification on 52,944 records with 12% positives; two-stage feature selection from 150 to 22 features, four models compared with rolling-window validation. The 3-month Euribor rate was the strongest predictor.</p>
-                    <div class="cv-tech">R &middot; rminer &middot; logistic regression &middot; SVM</div>
-                </article>
-            </div>
 
-            <h4 class="cv-group">Products and software</h4>
-            <div class="cv-projects">
-                <article class="cv-project">
-                    <h3><a href="ostrivo.html">Ostrivo</a></h3>
-                    <p>Live business intelligence web app: upload a file, get dashboards, anomaly detection and a plain-English executive summary.</p>
-                    <div class="cv-tech">Python &middot; Streamlit &middot; pandas &middot; Plotly</div>
+                <article class="pj" data-domain="biz" data-skills="python pandas stats timeseries matplotlib">
+                    <span class="pj-metric"><b>+38.8%</b> promotion uplift</span>
+                    <h3><a href="https://github.com/PeterImoniose/Rossmann" target="_blank" rel="noopener">Rossmann store sales</a></h3>
+                    <p>What drives daily sales across 1,115 drugstores, and why competitor distance does not.</p>
+                    <div class="cvx-tags"><span>pandas</span><span>Time series</span></div>
                 </article>
-                <article class="cv-project">
-                    <h3><a href="https://www.mamidavintltd.com/" target="_blank" rel="noopener">Mamidav International website</a></h3>
-                    <p>Company website built and deployed for a client, migrated from GitHub Pages to Hostinger with a PHP and MySQL back end.</p>
-                    <div class="cv-tech">HTML &middot; CSS &middot; JavaScript &middot; PHP &middot; MySQL</div>
+
+                <article class="pj" data-domain="biz" data-skills="python pandas timeseries matplotlib">
+                    <span class="pj-metric"><b>+7.1%</b> holiday uplift</span>
+                    <h3><a href="https://github.com/PeterImoniose/Walmart-recruiting" target="_blank" rel="noopener">Walmart sales</a> and <a href="https://github.com/PeterImoniose/Walmart-Store" target="_blank" rel="noopener">forecastability</a></h3>
+                    <p>Department drivers across 45 stores, then per-store growth, volatility and a seasonal-naive baseline.</p>
+                    <div class="cvx-tags"><span>pandas</span><span>Time series</span></div>
                 </article>
-                <article class="cv-project">
+
+                <article class="pj" data-domain="biz" data-skills="python pandas matplotlib">
+                    <span class="pj-metric"><b>RFM</b> customer segments</span>
+                    <h3><a href="https://github.com/PeterImoniose/Online-Retail-Analysis" target="_blank" rel="noopener">Online retail sales</a></h3>
+                    <p>Two years of real UK retailer transactions: revenue, seasonality and country mix.</p>
+                    <div class="cvx-tags"><span>pandas</span><span>Segmentation</span></div>
+                </article>
+
+                <article class="pj" data-domain="biz" data-skills="python pandas stats matplotlib">
+                    <span class="pj-metric"><b>2</b> exploratory studies</span>
+                    <h3><a href="https://github.com/PeterImoniose/Airbnb" target="_blank" rel="noopener">Airbnb Rio</a> and <a href="https://github.com/PeterImoniose/Company-registration" target="_blank" rel="noopener">UK companies</a></h3>
+                    <p>Short-let listings and pricing in Rio de Janeiro; UK companies by sector, turnover and growth.</p>
+                    <div class="cvx-tags"><span>pandas</span><span>Visualisation</span></div>
+                </article>
+
+                <article class="pj" data-domain="biz" data-skills="r stats validation">
+                    <span class="pj-metric"><b>150 → 22</b> features selected</span>
+                    <h3>Bank telemarketing prediction</h3>
+                    <p>52,944 records with 12% positives; four models compared with rolling-window validation. The 3-month Euribor rate was the strongest predictor.</p>
+                    <div class="cvx-tags"><span>R</span><span>rminer</span><span>SVM</span></div>
+                </article>
+
+                <article class="pj" data-domain="prod" data-skills="web js sql deploy">
+                    <span class="pj-metric"><b>Client</b> website, live</span>
+                    <h3><a href="https://www.mamidavintltd.com/" target="_blank" rel="noopener">Mamidav International</a></h3>
+                    <p>Company website built for a client and migrated to Hostinger with a PHP and MySQL back end.</p>
+                    <div class="cvx-tags"><span>JavaScript</span><span>PHP</span><span>MySQL</span></div>
+                </article>
+
+                <article class="pj" data-domain="prod" data-skills="python testing">
+                    <span class="pj-metric"><b>Salted</b> hashes, tested</span>
                     <h3><a href="https://github.com/PeterImoniose/Password_protection_system" target="_blank" rel="noopener">Password protection system</a></h3>
-                    <p>Secure account system with hashed and salted passwords, self-expiring lockout and recovery, rewritten from a prototype into a tested package.</p>
-                    <div class="cv-tech">Python &middot; pytest</div>
+                    <p>Secure account system with self-expiring lockout and recovery.</p>
+                    <div class="cvx-tags"><span>Python</span><span>pytest</span></div>
                 </article>
-                <article class="cv-project">
+
+                <article class="pj" data-domain="prod" data-skills="python nlp">
+                    <span class="pj-metric"><b>NLP</b> sentiment trends</span>
                     <h3>Sentiment analysis pipeline</h3>
-                    <p>NLP pipeline scoring customer feedback and earnings-call transcripts, producing sentiment trends over time for business review.</p>
-                    <div class="cv-tech">Python &middot; Transformers &middot; VADER &middot; NLTK</div>
+                    <p>Scores customer feedback and earnings-call transcripts and tracks sentiment over time.</p>
+                    <div class="cvx-tags"><span>Transformers</span><span>VADER</span><span>NLTK</span></div>
                 </article>
             </div>
+            <p class="cvx-empty" hidden>No public project uses this yet.</p>
         </section>
 
         <!-- Skills -->
-        <section class="cv-section">
-            <h2>Skills</h2>
-            <div class="cv-skills">
-                <div><h4>Programming</h4><p>Python, SQL, R, MATLAB, HTML, CSS, JavaScript</p></div>
-                <div><h4>Data engineering</h4><p>ETL pipelines, data audits and validation, feature engineering, reproducible builds, unit testing</p></div>
-                <div><h4>Machine learning</h4><p>scikit-learn, XGBoost, LightGBM, PyTorch; classification, regression, anomaly detection, Gaussian processes</p></div>
-                <div><h4>Statistics</h4><p>Hypothesis testing, regression, PCA, time series, change-point detection, Kalman filtering, survival analysis</p></div>
-                <div><h4>Visualisation and BI</h4><p>Power BI (DAX, Power Query), Tableau, Plotly, Matplotlib, Seaborn, Chart.js, Streamlit, Excel</p></div>
-                <div><h4>Tools</h4><p>Git and GitHub, VS Code, Jupyter, Streamlit Cloud, data governance and GDPR practice</p></div>
+        <section id="skills" class="cvx-section reveal">
+            <span class="cvx-kicker">05 &middot; Skills</span>
+            <h2>Skills, with the evidence</h2>
+            <p class="cvx-lede screen-only">Click a skill to see the projects that use it. The number is how many; <b>work</b> means it was used in a job or course rather than a public project.</p>
+
+            <div class="cvx-skills">
+                <div class="sk-group">
+                    <h3>Languages</h3>
+                    <div class="sk-chips">
+                        <button type="button" class="sk" data-skill="python">Python</button>
+                        <button type="button" class="sk" data-skill="sql" data-note="SQL: used daily in client reporting at Early Code, and for Mamidav's MySQL back end.">SQL</button>
+                        <button type="button" class="sk" data-skill="r">R</button>
+                        <button type="button" class="sk" data-skill="js">JavaScript</button>
+                        <button type="button" class="sk" data-skill="web">HTML and CSS</button>
+                        <button type="button" class="sk" data-skill="matlab" data-note="MATLAB: used in MSc engineering modules.">MATLAB</button>
+                    </div>
+                </div>
+                <div class="sk-group">
+                    <h3>Machine learning</h3>
+                    <div class="sk-chips">
+                        <button type="button" class="sk" data-skill="sklearn">scikit-learn</button>
+                        <button type="button" class="sk" data-skill="pytorch">PyTorch</button>
+                        <button type="button" class="sk" data-skill="lightgbm">LightGBM</button>
+                        <button type="button" class="sk" data-skill="gp">Gaussian processes</button>
+                        <button type="button" class="sk" data-skill="nlp">NLP</button>
+                        <button type="button" class="sk" data-skill="xgboost" data-note="XGBoost: fault classification in my MSc dissertation and client models at Early Code.">XGBoost</button>
+                    </div>
+                </div>
+                <div class="sk-group">
+                    <h3>Statistics and validation</h3>
+                    <div class="sk-chips">
+                        <button type="button" class="sk" data-skill="validation">Honest validation</button>
+                        <button type="button" class="sk" data-skill="stats">Hypothesis testing</button>
+                        <button type="button" class="sk" data-skill="timeseries">Time series</button>
+                        <button type="button" class="sk" data-skill="monitoring">Change points and Kalman</button>
+                        <button type="button" class="sk" data-skill="survival">Survival analysis</button>
+                        <button type="button" class="sk" data-skill="pca">PCA</button>
+                    </div>
+                </div>
+                <div class="sk-group">
+                    <h3>Data engineering</h3>
+                    <div class="sk-chips">
+                        <button type="button" class="sk" data-skill="pandas">pandas</button>
+                        <button type="button" class="sk" data-skill="pipelines">Pipelines and ETL</button>
+                        <button type="button" class="sk" data-skill="testing">Unit testing</button>
+                        <button type="button" class="sk" data-skill="signal">Signal processing</button>
+                        <button type="button" class="sk" data-skill="scipy">SciPy</button>
+                        <button type="button" class="sk" data-skill="deploy">Deployment</button>
+                    </div>
+                </div>
+                <div class="sk-group">
+                    <h3>Visualisation and BI</h3>
+                    <div class="sk-chips">
+                        <button type="button" class="sk" data-skill="powerbi" data-note="Power BI (DAX, Power Query): KPI dashboards for clients at Early Code.">Power BI</button>
+                        <button type="button" class="sk" data-skill="plotly">Plotly</button>
+                        <button type="button" class="sk" data-skill="matplotlib">Matplotlib</button>
+                        <button type="button" class="sk" data-skill="chartjs">Chart.js</button>
+                        <button type="button" class="sk" data-skill="streamlit">Streamlit</button>
+                        <button type="button" class="sk" data-skill="tableau" data-note="Tableau: used in MSc data visualisation work.">Tableau</button>
+                    </div>
+                </div>
+                <div class="sk-group">
+                    <h3>Ways of working</h3>
+                    <ul class="sk-plain">
+                        <li>Git and GitHub, VS Code, Jupyter</li>
+                        <li>Reproducible builds from raw data</li>
+                        <li>Data governance and GDPR</li>
+                        <li>Writing for non-technical readers</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <!-- Education -->
-        <section class="cv-section">
+        <section id="education" class="cvx-section reveal">
+            <span class="cvx-kicker">06 &middot; Education</span>
             <h2>Education</h2>
-            <article class="cv-item">
-                <div class="cv-item-head">
-                    <div>
-                        <h3>MSc Applied Data Science in Engineering - Distinction</h3>
-                        <div class="cv-org">Glasgow Caledonian University, Glasgow, UK</div>
+            <div class="cvx-edu">
+                <article class="edu edu-main">
+                    <div class="edu-head">
+                        <div>
+                            <h3>MSc Applied Data Science in Engineering</h3>
+                            <span class="cvx-org">Glasgow Caledonian University &middot; 2026</span>
+                        </div>
+                        <span class="edu-badge">Distinction</span>
                     </div>
-                    <span class="cv-date">2026</span>
-                </div>
-                <ul>
-                    <li>Dissertation: Predictive Maintenance of Wind Turbines Using SCADA Data, awarded 80%; practical engineering component awarded 90%.</li>
-                    <li>Modules: Software Development for Data Science (82%), Professional Practice in Engineering (77%), Digital Twins (76%), IoT Framework Informatics (76%), Data Capture (74%), Data Visualisation (63%), System Health Management (62%), Predictive Maintenance (61%).</li>
-                </ul>
-            </article>
-            <article class="cv-item">
-                <div class="cv-item-head">
-                    <div>
-                        <h3>BSc Industrial Mathematics - Second Class Honours</h3>
-                        <div class="cv-org">Delta State University, Nigeria</div>
+                    <p>Dissertation: <i>Predictive Maintenance of Wind Turbines Using SCADA Data</i>.</p>
+                    <div class="marks">
+                        <div class="mk hi"><span class="mk-l">Practical engineering component</span><span class="mk-t"><i style="--m:90"></i></span><span class="mk-v">90%</span></div>
+                        <div class="mk hi"><span class="mk-l">Dissertation</span><span class="mk-t"><i style="--m:80"></i></span><span class="mk-v">80%</span></div>
+                        <div class="mk"><span class="mk-l">Software Development for Data Science</span><span class="mk-t"><i style="--m:82"></i></span><span class="mk-v">82%</span></div>
+                        <div class="mk"><span class="mk-l">Professional Practice in Engineering</span><span class="mk-t"><i style="--m:77"></i></span><span class="mk-v">77%</span></div>
+                        <div class="mk"><span class="mk-l">Digital Twins</span><span class="mk-t"><i style="--m:76"></i></span><span class="mk-v">76%</span></div>
+                        <div class="mk"><span class="mk-l">IoT Framework Informatics</span><span class="mk-t"><i style="--m:76"></i></span><span class="mk-v">76%</span></div>
+                        <div class="mk"><span class="mk-l">Data Capture</span><span class="mk-t"><i style="--m:74"></i></span><span class="mk-v">74%</span></div>
+                        <div class="mk"><span class="mk-l">Data Visualisation</span><span class="mk-t"><i style="--m:63"></i></span><span class="mk-v">63%</span></div>
+                        <div class="mk"><span class="mk-l">System Health Management</span><span class="mk-t"><i style="--m:62"></i></span><span class="mk-v">62%</span></div>
+                        <div class="mk"><span class="mk-l">Predictive Maintenance</span><span class="mk-t"><i style="--m:61"></i></span><span class="mk-v">61%</span></div>
                     </div>
-                    <span class="cv-date">2017</span>
-                </div>
-                <ul>
-                    <li>Statistics, probability theory, statistical inference, linear algebra, numerical analysis, optimisation, mathematical modelling and sampling theory.</li>
-                </ul>
-            </article>
-        </section>
-
-        <!-- Research and certifications -->
-        <section class="cv-section cv-two">
-            <div>
-                <h2>Research</h2>
-                <p>
-                    Alkali, B., Imoniose, A. P. and Anwar, M. (2026). <em>A two-stage SCADA-based predictive
-                    maintenance framework for wind turbines: evaluation on the CARE benchmark dataset.</em>
-                    Accepted for publication at the euspen Special Interest Conference on Precision
-                    Engineering for Sustainability (SIC 2026).
-                </p>
-            </div>
-            <div>
-                <h2>Certifications</h2>
-                <ul class="cv-plain">
-                    <li>Python with Data Science - Early Code</li>
-                    <li>Introduction to Data Analytics - Simplilearn</li>
-                    <li>AI and Data Science Career Masterclass - Simplilearn</li>
-                    <li>Python for Beginners - Simplilearn</li>
-                    <li>Identifying and Addressing Gaming and Gambling Harms - YGAM, City &amp; Guilds assured</li>
-                </ul>
+                </article>
+                <article class="edu">
+                    <div class="edu-head">
+                        <div>
+                            <h3>BSc Industrial Mathematics</h3>
+                            <span class="cvx-org">Delta State University, Nigeria &middot; 2017</span>
+                        </div>
+                        <span class="edu-badge muted">Second Class Honours</span>
+                    </div>
+                    <p>Statistics, probability, statistical inference, linear algebra, numerical analysis, optimisation, mathematical modelling and sampling theory.</p>
+                </article>
             </div>
         </section>
 
-        <section class="cv-section">
-            <h2>Additional information</h2>
-            <p>
-                Authorised to work in the UK. Based in East Kilbride, Glasgow, and available for remote,
-                hybrid or office-based roles. References available on request.
-            </p>
+        <!-- Research + certs -->
+        <section id="research" class="cvx-section reveal">
+            <span class="cvx-kicker">07 &middot; Research and certifications</span>
+            <h2>Research</h2>
+            <article class="paper">
+                <span class="paper-badge">Accepted</span>
+                <h3>A two-stage SCADA-based predictive maintenance framework for wind turbines: evaluation on the CARE benchmark dataset</h3>
+                <p class="paper-auth">Alkali, B., <b>Imoniose, A. P.</b> and Anwar, M. (2026)</p>
+                <p class="paper-venue">euspen Special Interest Conference on Precision Engineering for Sustainability (SIC 2026)</p>
+            </article>
+
+            <h3 class="cvx-subhead">Certifications</h3>
+            <ul class="certs">
+                <li><b>Python with Data Science</b><span>Early Code</span></li>
+                <li><b>Introduction to Data Analytics</b><span>Simplilearn</span></li>
+                <li><b>AI and Data Science Career Masterclass</b><span>Simplilearn</span></li>
+                <li><b>Python for Beginners</b><span>Simplilearn</span></li>
+                <li><b>Identifying and Addressing Gaming and Gambling Harms</b><span>YGAM, City &amp; Guilds assured</span></li>
+            </ul>
         </section>
+
+        <!-- Contact -->
+        <section id="contact" class="cvx-section reveal">
+            <div class="cvx-cta">
+                <span class="cvx-kicker">08 &middot; Contact</span>
+                <h2>Let's talk about your data</h2>
+                <p>Authorised to work in the UK. Based in East Kilbride, Glasgow, and available now for remote, hybrid or office-based roles. References on request.</p>
+                <div class="cvx-actions center">
+                    <a class="btn btn-primary" href="mailto:peterimoniose@live.com">peterimoniose@live.com</a>
+                    <a class="btn btn-secondary" href="https://www.linkedin.com/in/avwerosuo-imoniose-bbb3b915a" target="_blank" rel="noopener">LinkedIn ↗</a>
+                    <a class="btn btn-secondary" href="https://github.com/PeterImoniose" target="_blank" rel="noopener">GitHub ↗</a>
+                    <button type="button" class="btn btn-secondary" data-print>Download PDF</button>
+                </div>
+            </div>
+        </section>
+
     </div>
+</div>
 </main>
 
 <footer class="site-footer">
@@ -388,5 +706,6 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/cv.js?v=3"></script>
 </body>
 </html>
