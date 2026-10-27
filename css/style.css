@@ -473,3 +473,171 @@ section { padding: 72px 0; }
 /* ── Utility ─────────────────────────────────────────────────────────────── */
 .text-center { text-align: center; }
 .mt-0 { margin-top: 0; }
+
+/* ── CV page ─────────────────────────────────────────────────────────────── */
+.cv-hero { padding-bottom: 40px; }
+.cv-hero h1 { margin-bottom: 8px; }
+.cv-hero p.lead { margin-bottom: 20px; }
+
+.cv-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 22px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.cv-body { max-width: 900px; }
+
+.cv-section {
+    padding: 40px 0;
+    border-top: 1px solid var(--border);
+}
+
+.cv-section h2 { font-size: 1.5rem; margin-bottom: 20px; }
+
+.cv-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.cv-stats > div {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.cv-stats .stat-value { font-size: 1.7rem; }
+
+.cv-item {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 28px;
+    border-left: 2px solid var(--border);
+}
+
+.cv-item::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.cv-item:last-child { margin-bottom: 0; }
+
+.cv-item-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 6px 16px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.cv-item h3 { font-size: 1.1rem; margin: 0; }
+.cv-org { color: var(--text-muted); font-size: 0.95rem; }
+
+.cv-date {
+    color: var(--accent-bright);
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.cv-item ul, .cv-plain {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--text-muted);
+}
+
+.cv-item li, .cv-plain li { margin-bottom: 6px; font-size: 0.95rem; }
+
+.cv-note { font-size: 0.95rem; }
+
+.cv-group {
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 28px 0 14px;
+}
+
+.cv-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.cv-project {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cv-project h3 { font-size: 1rem; margin-bottom: 8px; }
+.cv-project h3 a { color: var(--text); }
+.cv-project h3 a:hover { color: var(--accent-bright); }
+.cv-project p { font-size: 0.9rem; margin-bottom: 12px; flex-grow: 1; }
+
+.cv-tech { font-size: 0.8rem; color: var(--accent-bright); }
+
+.cv-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.cv-skills > div {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+}
+
+.cv-skills h4 { font-size: 0.95rem; margin-bottom: 6px; }
+.cv-skills p { font-size: 0.9rem; margin: 0; }
+
+.cv-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+@media (max-width: 720px) {
+    .cv-two { grid-template-columns: 1fr; gap: 0; }
+    .cv-two > div + div { margin-top: 32px; }
+}
+
+/* Print: a clean black-on-white CV */
+@media print {
+    :root {
+        --bg: #fff; --bg-card: #fff; --bg-elevated: #fff; --border: #d0d5dd;
+        --text: #111; --text-muted: #333; --text-faint: #555;
+        --accent: #1d4ed8; --accent-bright: #1d4ed8; --accent-soft: transparent;
+    }
+    body { font-size: 10.5pt; line-height: 1.4; }
+    .site-header, .site-footer, .cv-actions, .eyebrow, .cv-note { display: none !important; }
+    .cv-hero { padding: 0 0 12px; }
+    .cv-hero h1 { font-size: 22pt; }
+    .cv-section { padding: 14px 0; }
+    .cv-section h2 { font-size: 13pt; margin-bottom: 10px; }
+    .cv-stats { display: none; }
+    .cv-item { margin-bottom: 12px; break-inside: avoid; }
+    .cv-project, .cv-skills > div { padding: 8px 10px; break-inside: avoid; }
+    .cv-projects, .cv-skills { gap: 8px; grid-template-columns: 1fr 1fr; }
+    a { color: inherit; }
+}

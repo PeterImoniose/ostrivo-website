@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV - Avwerosuo Peter Imoniose</title>
+<meta name="description" content="CV of Avwerosuo Peter Imoniose - data scientist with an MSc in Applied Data Science in Engineering. Experience, projects, skills and education.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=cv1">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container nav">
+        <a href="index.html" class="nav-brand"><span class="dot"></span>Ostrivo</a>
+        <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="ostrivo.html">Ostrivo</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+</header>
+
+<main class="cv">
+    <section class="hero cv-hero">
+        <div class="container">
+            <span class="eyebrow">Curriculum vitae</span>
+            <h1>Avwerosuo Peter Imoniose</h1>
+            <p class="lead">
+                Data scientist &middot; MSc Applied Data Science in Engineering (Distinction)
+            </p>
+            <ul class="cv-contact">
+                <li>East Kilbride, Glasgow, UK</li>
+                <li><a href="mailto:peterimoniose@live.com">peterimoniose@live.com</a></li>
+                <li><a href="https://www.linkedin.com/in/avwerosuo-imoniose-bbb3b915a" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://github.com/PeterImoniose" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+            <div class="hero-actions cv-actions">
+                <button type="button" class="btn btn-primary" onclick="window.print()">Print or save as PDF</button>
+                <a href="portfolio.html" class="btn btn-secondary">See the portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container cv-body">
+
+        <!-- Summary -->
+        <section class="cv-section">
+            <h2>Profile</h2>
+            <p>
+                Data scientist with an MSc in Applied Data Science in Engineering and a mathematical
+                foundation from a BSc in Industrial Mathematics. I work across the whole data workflow:
+                collecting, auditing and cleaning messy data, building Python and SQL pipelines, modelling,
+                and reporting through dashboards and presentations that non-technical people can act on.
+            </p>
+            <p>
+                My projects focus on predictive maintenance, condition monitoring and business analytics,
+                and on validation that holds up: testing models on data they have never seen, checking for
+                shortcuts in the data, and reporting the results honestly, including when they are negative.
+                I also build and run <a href="ostrivo.html">Ostrivo</a>, a live business intelligence web app.
+            </p>
+            <div class="cv-stats">
+                <div><div class="stat-value">80%</div><div class="stat-label">MSc dissertation (Distinction)</div></div>
+                <div><div class="stat-value">15+</div><div class="stat-label">public projects on GitHub</div></div>
+                <div><div class="stat-value">1</div><div class="stat-label">conference paper accepted (euspen SIC 2026)</div></div>
+                <div><div class="stat-value">1</div><div class="stat-label">live product with real users</div></div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="cv-section">
+            <h2>Experience</h2>
+
+            <article class="cv-item">
+                <div class="cv-item-head">
+                    <div>
+                        <h3>Founder and Developer</h3>
+                        <div class="cv-org">Ostrivo, Glasgow</div>
+                    </div>
+                    <span class="cv-date">Aug 2026 - Present</span>
+                </div>
+                <ul>
+                    <li>Designed, built and deployed Ostrivo end to end: a business intelligence web app that turns an uploaded CSV or Excel file into a cleaned dataset, dashboards, anomaly detection, forecasts and a plain-English summary.</li>
+                    <li>Built the analysis engine in Python (pandas, scikit-learn, Plotly) and the app in Streamlit, with multi-user accounts, email-code sign-up on a custom domain and PDF export.</li>
+                    <li>Tested the engine against five real public sales datasets, which found and fixed three analysis bugs before users hit them.</li>
+                    <li>Built and run the product website and portfolio at ostrivo.app (HTML, CSS, JavaScript).</li>
+                </ul>
+            </article>
+
+            <article class="cv-item">
+                <div class="cv-item-head">
+                    <div>
+                        <h3>Research Data Scientist (MSc research)</h3>
+                        <div class="cv-org">Glasgow Caledonian University, Glasgow</div>
+                    </div>
+                    <span class="cv-date">Jan 2025 - Jun 2026</span>
+                </div>
+                <ul>
+                    <li>Built a two-stage predictive maintenance pipeline on SCADA data from 36 wind turbines across three wind farms (95 datasets, 89 turbine-years): automated ingestion, validation, feature engineering, fault detection and fault localisation.</li>
+                    <li>Later rebuilt it under a strict protocol where no result uses information an operator would not have had: a CARE benchmark score of 0.619 over all 95 datasets, against 0.66 for the published model that was tuned on the same data.</li>
+                    <li>On the best-instrumented farm, the faulty subsystem is in the model's top three for 64% of faults, against 33% by chance.</li>
+                    <li>Research accepted for publication at the euspen Special Interest Conference on Precision Engineering for Sustainability (SIC 2026).</li>
+                    <li>Led data quality and completeness analysis across multiple data sources, finding and resolving integrity issues that affected model performance.</li>
+                    <li>Built interactive HTML dashboards and presentations that turned the findings into clear, decision-ready insight.</li>
+                </ul>
+            </article>
+
+            <article class="cv-item">
+                <div class="cv-item-head">
+                    <div>
+                        <h3>Personal Assistant / Care and Support Worker</h3>
+                        <div class="cv-org">Enable Cares (formerly The Mungo Foundation), Glasgow</div>
+                    </div>
+                    <span class="cv-date">Jun 2025 - Present</span>
+                </div>
+                <ul>
+                    <li>Keep accurate, structured digital records in dementia and mental health care settings, in line with GDPR, data governance policy and SSSC standards.</li>
+                    <li>Write evidence-based reports and handovers used by multidisciplinary teams for care planning.</li>
+                </ul>
+            </article>
+
+            <article class="cv-item">
+                <div class="cv-item-head">
+                    <div>
+                        <h3>Junior Data Scientist</h3>
+                        <div class="cv-org">Early Code, Abuja, Nigeria</div>
+                    </div>
+                    <span class="cv-date">Aug 2023 - Jan 2025</span>
+                </div>
+                <ul>
+                    <li>Designed and automated Python ETL workflows that cut manual data preparation by 25% and made outputs consistent across several client projects.</li>
+                    <li>Queried, transformed and analysed relational data in SQL for reporting and business analysis.</li>
+                    <li>Built Power BI dashboards and Plotly visualisations for live KPI monitoring.</li>
+                    <li>Applied regression, classification and hypothesis testing to client problems and presented the results to stakeholders; mentored junior colleagues in Python.</li>
+                </ul>
+            </article>
+
+            <article class="cv-item">
+                <div class="cv-item-head">
+                    <div>
+                        <h3>Data Entry and Records Assistant</h3>
+                        <div class="cv-org">Public sector organisation, Nigeria</div>
+                    </div>
+                    <span class="cv-date">Nov 2018 - Jun 2023</span>
+                </div>
+                <ul>
+                    <li>Maintained and reconciled large administrative and financial datasets under audit and compliance requirements.</li>
+                    <li>Produced structured cost analysis reports for senior management.</li>
+                </ul>
+            </article>
+
+            <article class="cv-item">
+                <div class="cv-item-head">
+                    <div>
+                        <h3>Lead Computer Operator</h3>
+                        <div class="cv-org">Blended Technology Solutions, Delta State, Nigeria</div>
+                    </div>
+                    <span class="cv-date">Mar 2015 - Oct 2018</span>
+                </div>
+                <ul>
+                    <li>Led a 7-person technical team that brought a system back into service after two years out of use.</li>
+                    <li>Maintained digital records, ran diagnostics, managed internal networks and trained junior staff in data handling.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Projects -->
+        <section class="cv-section">
+            <h2>Selected projects</h2>
+            <p class="cv-note">All public projects have their code, notebooks and findings on GitHub. Full cards are on the <a href="portfolio.html">portfolio page</a>.</p>
+
+            <h4 class="cv-group">Predictive maintenance and engineering analytics</h4>
+            <div class="cv-projects">
+                <article class="cv-project">
+                    <h3><a href="https://github.com/PeterImoniose/care-wind-turbine-predictive-maintenance-v2" target="_blank" rel="noopener">Wind turbine predictive maintenance (v2)</a></h3>
+                    <p>A from-scratch rebuild of my dissertation with a leak-free evaluation and a tested Python package. CARE score 0.619 over all 95 benchmark datasets, and fault localisation about twice as accurate as chance on the best-instrumented farm.</p>
+                    <div class="cv-tech">Python &middot; PyTorch &middot; PCA &middot; bootstrap intervals &middot; pytest</div>
+                </article>
+                <article class="cv-project">
+                    <h3><a href="https://github.com/PeterImoniose/fuel-system-digital-twin" target="_blank" rel="noopener">Fuel system digital twin</a></h3>
+                    <p>Physics-based health indicators that tell five faults apart, a pump model checked against its datasheet, and live monitoring. A classifier trained only on simulated faults reaches macro F1 0.87 on the real rig.</p>
+                    <div class="cv-tech">Python &middot; SciPy &middot; Gaussian processes &middot; Kalman filters &middot; Streamlit</div>
+                </article>
+                <article class="cv-project">
+                    <h3><a href="https://github.com/PeterImoniose/phm2026-door-rul-prediction" target="_blank" rel="noopener">Subway gate motor remaining life</a></h3>
+                    <p>PHM Europe 2026 Data Challenge. Once two degradation steps are seen, 77% of life predictions land within 20% of the truth; before that, nothing beats a simple baseline, and the analysis says so.</p>
+                    <div class="cv-tech">Python &middot; LightGBM &middot; survival analysis</div>
+                </article>
+                <article class="cv-project">
+                    <h3><a href="https://github.com/PeterImoniose/water-leak-detection-generalisation" target="_blank" rel="noopener">Water pipe leak detection</a></h3>
+                    <p>Accelerometer, pressure and hydrophone data. Models score 0.92-1.00 on a random split and fall to chance on an unseen pipe layout; the analysis traces why.</p>
+                    <div class="cv-tech">Python &middot; signal processing &middot; LightGBM &middot; PyTorch</div>
+                </article>
+                <article class="cv-project">
+                    <h3><a href="https://github.com/PeterImoniose/Industrial-Pump-Maintenance-Analysis" target="_blank" rel="noopener">Industrial pump fleet analysis</a></h3>
+                    <p>Statistical testing (t-tests, Cohen's d) and three classifiers on a large pump sensor dataset, with a Chart.js dashboard. Shows the sensors carry no real maintenance signal before anyone deploys a model on them.</p>
+                    <div class="cv-tech">Python &middot; scikit-learn &middot; Chart.js</div>
+                </article>
+            </div>
+
+            <h4 class="cv-group">Business and sales analytics</h4>
+            <div class="cv-projects">
+                <article class="cv-project">
+                    <h3><a href="https://github.com/PeterImoniose/Olist" target="_blank" rel="noopener">Olist e-commerce</a></h3>
+                    <p>Revenue, category and geography analysis of a Brazilian marketplace; late delivery drives a 1.73-star drop in review score.</p>
+                    <div class="cv-tech">Python &middot; pandas</div>
+                </article>
+                <article class="cv-project">
+                    <h3><a href="https://github.com/PeterImoniose/Rossmann" target="_blank" rel="noopener">Rossmann store sales</a></h3>
+                    <p>What drives daily sales across 1,115 drugstores: a 38.8% promotion uplift, store type and seasonality, while competitor distance does not matter.</p>
+                    <div class="cv-tech">Python &middot; pandas</div>
+                </article>
+                <article class="cv-project">
+                    <h3><a href="https://github.com/PeterImoniose/Walmart-recruiting" target="_blank" rel="noopener">Walmart sales drivers</a> and <a href="https://github.com/PeterImoniose/Walmart-Store" target="_blank" rel="noopener">time series</a></h3>
+                    <p>Department and store-level analysis of 45 stores: holiday uplift, size against type, and per-store growth, volatility and forecastability.</p>
+                    <div class="cv-tech">Python &middot; pandas &middot; time series</div>
+                </article>
+                <article class="cv-project">
+                    <h3><a href="https://github.com/PeterImoniose/Online-Retail-Analysis" target="_blank" rel="noopener">Online retail sales and RFM</a></h3>
+                    <p>Two years of real UK retailer transactions: revenue, seasonality, country mix and RFM customer segmentation.</p>
+                    <div class="cv-tech">Python &middot; pandas</div>
+                </article>
+                <article class="cv-project">
+                    <h3><a href="https://github.com/PeterImoniose/Airbnb" target="_blank" rel="noopener">Airbnb Rio de Janeiro</a> and <a href="https://github.com/PeterImoniose/Company-registration" target="_blank" rel="noopener">UK company registrations</a></h3>
+                    <p>Exploratory analysis of short-let listings and pricing, and of UK companies by sector, turnover and growth.</p>
+                    <div class="cv-tech">Python &middot; pandas &middot; visualisation</div>
+                </article>
+                <article class="cv-project">
+                    <h3>Bank telemarketing success prediction</h3>
+                    <p>Classification on 52,944 records with 12% positives; two-stage feature selection from 150 to 22 features, four models compared with rolling-window validation. The 3-month Euribor rate was the strongest predictor.</p>
+                    <div class="cv-tech">R &middot; rminer &middot; logistic regression &middot; SVM</div>
+                </article>
+            </div>
+
+            <h4 class="cv-group">Products and software</h4>
+            <div class="cv-projects">
+                <article class="cv-project">
+                    <h3><a href="ostrivo.html">Ostrivo</a></h3>
+                    <p>Live business intelligence web app: upload a file, get dashboards, anomaly detection and a plain-English executive summary.</p>
+                    <div class="cv-tech">Python &middot; Streamlit &middot; pandas &middot; Plotly</div>
+                </article>
+                <article class="cv-project">
+                    <h3><a href="https://www.mamidavintltd.com/" target="_blank" rel="noopener">Mamidav International website</a></h3>
+                    <p>Company website built and deployed for a client, migrated from GitHub Pages to Hostinger with a PHP and MySQL back end.</p>
+                    <div class="cv-tech">HTML &middot; CSS &middot; JavaScript &middot; PHP &middot; MySQL</div>
+                </article>
+                <article class="cv-project">
+                    <h3><a href="https://github.com/PeterImoniose/Password_protection_system" target="_blank" rel="noopener">Password protection system</a></h3>
+                    <p>Secure account system with hashed and salted passwords, self-expiring lockout and recovery, rewritten from a prototype into a tested package.</p>
+                    <div class="cv-tech">Python &middot; pytest</div>
+                </article>
+                <article class="cv-project">
+                    <h3>Sentiment analysis pipeline</h3>
+                    <p>NLP pipeline scoring customer feedback and earnings-call transcripts, producing sentiment trends over time for business review.</p>
+                    <div class="cv-tech">Python &middot; Transformers &middot; VADER &middot; NLTK</div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="cv-section">
+            <h2>Skills</h2>
+            <div class="cv-skills">
+                <div><h4>Programming</h4><p>Python, SQL, R, MATLAB, HTML, CSS, JavaScript</p></div>
+                <div><h4>Data engineering</h4><p>ETL pipelines, data audits and validation, feature engineering, reproducible builds, unit testing</p></div>
+                <div><h4>Machine learning</h4><p>scikit-learn, XGBoost, LightGBM, PyTorch; classification, regression, anomaly detection, Gaussian processes</p></div>
+                <div><h4>Statistics</h4><p>Hypothesis testing, regression, PCA, time series, change-point detection, Kalman filtering, survival analysis</p></div>
+                <div><h4>Visualisation and BI</h4><p>Power BI (DAX, Power Query), Tableau, Plotly, Matplotlib, Seaborn, Chart.js, Streamlit, Excel</p></div>
+                <div><h4>Tools</h4><p>Git and GitHub, VS Code, Jupyter, Streamlit Cloud, data governance and GDPR practice</p></div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="cv-section">
+            <h2>Education</h2>
+            <article class="cv-item">
+                <div class="cv-item-head">
+                    <div>
+                        <h3>MSc Applied Data Science in Engineering - Distinction</h3>
+                        <div class="cv-org">Glasgow Caledonian University, Glasgow, UK</div>
+                    </div>
+                    <span class="cv-date">2026</span>
+                </div>
+                <ul>
+                    <li>Dissertation: Predictive Maintenance of Wind Turbines Using SCADA Data, awarded 80%; practical engineering component awarded 90%.</li>
+                    <li>Modules: Software Development for Data Science (82%), Professional Practice in Engineering (77%), Digital Twins (76%), IoT Framework Informatics (76%), Data Capture (74%), Data Visualisation (63%), System Health Management (62%), Predictive Maintenance (61%).</li>
+                </ul>
+            </article>
+            <article class="cv-item">
+                <div class="cv-item-head">
+                    <div>
+                        <h3>BSc Industrial Mathematics - Second Class Honours</h3>
+                        <div class="cv-org">Delta State University, Nigeria</div>
+                    </div>
+                    <span class="cv-date">2017</span>
+                </div>
+                <ul>
+                    <li>Statistics, probability theory, statistical inference, linear algebra, numerical analysis, optimisation, mathematical modelling and sampling theory.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Research and certifications -->
+        <section class="cv-section cv-two">
+            <div>
+                <h2>Research</h2>
+                <p>
+                    Alkali, B., Imoniose, A. P. and Anwar, M. (2026). <em>A two-stage SCADA-based predictive
+                    maintenance framework for wind turbines: evaluation on the CARE benchmark dataset.</em>
+                    Accepted for publication at the euspen Special Interest Conference on Precision
+                    Engineering for Sustainability (SIC 2026).
+                </p>
+            </div>
+            <div>
+                <h2>Certifications</h2>
+                <ul class="cv-plain">
+                    <li>Python with Data Science - Early Code</li>
+                    <li>Introduction to Data Analytics - Simplilearn</li>
+                    <li>AI and Data Science Career Masterclass - Simplilearn</li>
+                    <li>Python for Beginners - Simplilearn</li>
+                    <li>Identifying and Addressing Gaming and Gambling Harms - YGAM, City &amp; Guilds assured</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cv-section">
+            <h2>Additional information</h2>
+            <p>
+                Authorised to work in the UK. Based in East Kilbride, Glasgow, and available for remote,
+                hybrid or office-based roles. References available on request.
+            </p>
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-row">
+        <span class="footer-note">© 2026 Ostrivo.</span>
+        <ul class="footer-links">
+            <li><a href="https://github.com/PeterImoniose" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/avwerosuo-imoniose-bbb3b915a" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="about.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
