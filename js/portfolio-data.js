@@ -57,12 +57,14 @@ const PORTFOLIO_ITEMS = [
         noImage: true
     },
     {
-        title: "Fuel System Condition Analysis",
+        title: "Fuel System Digital Twin",
         category: "python",
-        tag: "Python",
-        description: "Condition monitoring of a fuel injection test rig across five induced fault types, plus a physics-informed regression model for flow prediction deployed as an interactive Gradio demo.",
-        link: "https://github.com/PeterImoniose/Analysis-of-the-condition-of-a-fuel-system",
+        tag: "MSc coursework - rebuilt",
+        description: "A digital shadow of a laboratory aircraft fuel system: physics-based health indicators that tell all five emulated faults apart, a gear-pump model checked against its datasheet, and live monitoring with change detection and Kalman tracking. It also shows the fault labels are tied to the time of day - a clock-only model scores 96% - so the trustworthy evidence is a classifier trained only on simulated faults, which reaches macro F1 0.87 on the real rig.",
+        link: "https://github.com/PeterImoniose/fuel-system-digital-twin",
         linkLabel: "View on GitHub",
+        secondaryLink: "https://github.com/PeterImoniose/Analysis-of-the-condition-of-a-fuel-system",
+        secondaryLinkLabel: "Original coursework version",
         icon: "⛽",
         noImage: true
     },
