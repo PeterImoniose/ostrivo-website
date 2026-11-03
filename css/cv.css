@@ -9,11 +9,11 @@
 
 .cv-page section { padding: 0; }
 
-/* ── Reveal on scroll (only when JS is running) ─────────────────────────── */
+/* Reveal on scroll (only when JS is running) */
 .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.45s ease, transform 0.45s ease; }
 .js .reveal.is-visible { opacity: 1; transform: none; }
 
-/* ── Hero ────────────────────────────────────────────────────────────────── */
+/* Hero */
 .cvx-hero {
     position: relative;
     overflow: hidden;
@@ -180,7 +180,7 @@
 .cvx-stat .num { font-family: var(--font-heading); font-size: 1.9rem; font-weight: 700; color: var(--text); line-height: 1.1; }
 .cvx-stat .lbl { font-size: 0.78rem; color: var(--text-faint); }
 
-/* ── Layout: sticky section nav + content ───────────────────────────────── */
+/* Layout: sticky section nav + content */
 .cvx-layout {
     display: grid;
     grid-template-columns: 170px minmax(0, 1fr);
@@ -299,7 +299,7 @@
     color: var(--text-muted);
 }
 
-/* ── Experience timeline ─────────────────────────────────────────────────── */
+/* Experience timeline */
 .cvx-timeline { list-style: none; margin: 8px 0 0; padding: 0; position: relative; }
 
 .cvx-timeline::before {
@@ -354,7 +354,7 @@
 .cvx-other-item .cvx-org { font-size: 0.8rem; display: block; margin-bottom: 8px; }
 .cvx-other-item p { font-size: 0.84rem; margin: 0; }
 
-/* ── Rebuild cards with before/after toggle ─────────────────────────────── */
+/* Rebuild cards with before/after toggle */
 .cvx-rebuilds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
 .cvx-rebuilds .rb:first-child { grid-column: 1 / -1; }
 
@@ -492,7 +492,7 @@
 .rb-callout b { font-family: var(--font-heading); font-size: 1.6rem; color: #fcd34d; }
 .rb-callout span { font-size: 0.82rem; color: var(--text-muted); }
 
-/* ── Projects ────────────────────────────────────────────────────────────── */
+/* Projects */
 .cvx-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0 16px; }
 
 .chip {
@@ -571,7 +571,7 @@
 
 .cvx-empty { color: var(--text-faint); padding: 20px 0; }
 
-/* ── Skills ─────────────────────────────────────────────────────────────── */
+/* Skills */
 .cvx-skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 18px; }
 .sk-group { padding: 18px 20px; border-radius: 14px; background: var(--bg-card); border: 1px solid var(--border); }
 .sk-group h3 { font-size: 0.95rem; margin-bottom: 12px; }
@@ -612,7 +612,7 @@
 .sk-plain { margin: 0; padding-left: 18px; color: var(--text-muted); font-size: 0.88rem; }
 .sk-plain li { margin-bottom: 4px; }
 
-/* ── Education ──────────────────────────────────────────────────────────── */
+/* Education */
 .cvx-edu { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 10px; }
 .edu { padding: 20px 22px; border-radius: 14px; background: var(--bg-card); border: 1px solid var(--border); }
 .edu-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
@@ -643,7 +643,7 @@
 .js .marks:not(.is-drawn) .mk-t i { width: 0; }
 .js .cvx-rebuilds:not(.is-drawn) .rb-bar { width: 0; }
 
-/* ── Research and certifications ────────────────────────────────────────── */
+/* Research and certifications */
 .paper {
     position: relative;
     padding: 22px 24px;
@@ -674,7 +674,7 @@
 .certs b { font-size: 0.88rem; font-weight: 600; }
 .certs span { font-size: 0.78rem; color: var(--text-faint); }
 
-/* ── Contact CTA ────────────────────────────────────────────────────────── */
+/* Contact CTA */
 .cvx-cta {
     text-align: center;
     padding: 48px 28px;
@@ -687,7 +687,7 @@
 
 .cvx-cta p { max-width: 560px; margin: 0 auto 24px; }
 
-/* ── Responsive ─────────────────────────────────────────────────────────── */
+/* Responsive */
 @media (max-width: 1000px) {
     .cvx-layout { grid-template-columns: minmax(0, 1fr); gap: 0; padding-top: 0; }
 
@@ -760,7 +760,7 @@
     .js .reveal { opacity: 1; transform: none; }
 }
 
-/* ── Print: a clean black-on-white CV ──────────────────────────── */
+/* Print: a clean black-on-white CV */
 @media print {
     @page { size: A4; margin: 12mm 13mm; }
     html { font-size: 10px; }

@@ -9,7 +9,6 @@ const PORTFOLIO_ITEMS = [
         description: "AI-powered business intelligence web app - upload a CSV/Excel file and get instant dashboards, anomaly detection, and plain-English executive summaries.",
         link: "ostrivo.html",
         linkLabel: "View project",
-        icon: "📊",
         noImage: true
     },
     {
@@ -21,7 +20,6 @@ const PORTFOLIO_ITEMS = [
         linkLabel: "Visit site",
         secondaryLink: "https://github.com/maranathaadesanya/mamidavintltd",
         secondaryLinkLabel: "View on GitHub",
-        icon: "🌐",
         noImage: true
     },
     {
@@ -33,7 +31,6 @@ const PORTFOLIO_ITEMS = [
         linkLabel: "View v2 on GitHub",
         secondaryLink: "https://github.com/PeterImoniose/care-wind-turbine-predictive-maintenance",
         secondaryLinkLabel: "Original dissertation version",
-        icon: "🌬️",
         noImage: true
     },
     {
@@ -43,7 +40,6 @@ const PORTFOLIO_ITEMS = [
         description: "A secure, from-scratch account system - hashed and salted passwords, self-expiring login lockout, and password recovery - rewritten from an insecure notebook prototype into a tested Python package.",
         link: "https://github.com/PeterImoniose/Password_protection_system",
         linkLabel: "View on GitHub",
-        icon: "🔒",
         noImage: true
     },
     {
@@ -53,7 +49,6 @@ const PORTFOLIO_ITEMS = [
         description: "Statistical testing and machine learning applied to industrial pump sensor data to test whether maintenance needs can be predicted - and honestly reports the negative result when the data doesn't support it.",
         link: "https://github.com/PeterImoniose/Industrial-Pump-Maintenance-Analysis",
         linkLabel: "View on GitHub",
-        icon: "⚙️",
         noImage: true
     },
     {
@@ -65,7 +60,6 @@ const PORTFOLIO_ITEMS = [
         linkLabel: "View on GitHub",
         secondaryLink: "https://github.com/PeterImoniose/Analysis-of-the-condition-of-a-fuel-system",
         secondaryLinkLabel: "Earlier version",
-        icon: "⛽",
         noImage: true
     },
     {
@@ -75,7 +69,6 @@ const PORTFOLIO_ITEMS = [
         description: "Machine learning on accelerometer, pressure and hydrophone recordings from a public leak-detection benchmark. Models score 0.92 to 1.00 on a random split and fall to chance on a pipe layout they were not trained on - the analysis traces why, including an interference pattern hidden in the sensor data.",
         link: "https://github.com/PeterImoniose/water-leak-detection-generalisation",
         linkLabel: "View on GitHub",
-        icon: "💧",
         noImage: true
     },
     {
@@ -85,7 +78,6 @@ const PORTFOLIO_ITEMS = [
         description: "Predicting how many cycles a subway ticket gate motor has left, on the PHM Europe 2026 Data Challenge dataset. The analysis shows the door fails in sudden steps after a long silent plateau: once two steps are seen, 77% of predictions land within 20% of the true life, but before the first step no model beats a simple baseline - and a promising early-warning signal is tested and shown to be noise.",
         link: "https://github.com/PeterImoniose/phm2026-door-rul-prediction",
         linkLabel: "View on GitHub",
-        icon: "🚇",
         noImage: true
     },
     {
@@ -95,7 +87,6 @@ const PORTFOLIO_ITEMS = [
         description: "Revenue, seasonality, and RFM analysis of two years of real UK online retailer transactions - customer segmentation groundwork for a follow-up piece of ML work.",
         link: "https://github.com/PeterImoniose/Online-Retail-Analysis",
         linkLabel: "View on GitHub",
-        icon: "🛍️",
         noImage: true
     },
     {
@@ -105,7 +96,6 @@ const PORTFOLIO_ITEMS = [
         description: "What actually drives daily sales across 1,115 German drugstores - promo uplift, store type, seasonality, and why competition distance turns out not to matter.",
         link: "https://github.com/PeterImoniose/Rossmann",
         linkLabel: "View on GitHub",
-        icon: "🏪",
         noImage: true
     },
     {
@@ -115,7 +105,6 @@ const PORTFOLIO_ITEMS = [
         description: "Department-level analysis of 45 Walmart stores - store size vs. type, holiday uplift, and why regional economic indicators show no real signal.",
         link: "https://github.com/PeterImoniose/Walmart-recruiting",
         linkLabel: "View on GitHub",
-        icon: "🏬",
         noImage: true
     },
     {
@@ -125,7 +114,6 @@ const PORTFOLIO_ITEMS = [
         description: "Same Walmart stores, a different question - per-store growth, volatility, and forecastability, including a seasonal-naive baseline check for a future forecasting model.",
         link: "https://github.com/PeterImoniose/Walmart-Store",
         linkLabel: "View on GitHub",
-        icon: "📈",
         noImage: true
     },
     {
@@ -135,7 +123,6 @@ const PORTFOLIO_ITEMS = [
         description: "Revenue, category, and geography analysis of a Brazilian e-commerce marketplace - and the standout finding that late delivery drives a 1.73-star review-score drop.",
         link: "https://github.com/PeterImoniose/Olist",
         linkLabel: "View on GitHub",
-        icon: "🛒",
         noImage: true
     },
     {
@@ -145,7 +132,6 @@ const PORTFOLIO_ITEMS = [
         description: "Sector, turnover, and growth analysis of UK company registration data - answering four set questions with data-driven corrections to initial hypotheses along the way.",
         link: "https://github.com/PeterImoniose/Company-registration",
         linkLabel: "View on GitHub",
-        icon: "🏛️",
         noImage: true
     }
 
@@ -157,7 +143,6 @@ const PORTFOLIO_ITEMS = [
         description: "One-sentence summary of what the dashboard analyses and who it's for.",
         link: "https://link-to-published-dashboard-or-screenshot",
         linkLabel: "View dashboard",
-        icon: "📈"
     },
     */
 
@@ -169,7 +154,6 @@ const PORTFOLIO_ITEMS = [
         description: "One-sentence summary of the project.",
         link: "https://github.com/PeterImoniose/repo-name",
         linkLabel: "View on GitHub",
-        icon: "🐍"
     },
     */
 ];

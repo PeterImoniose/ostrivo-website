@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ` : '';
         const imageSlotHtml = item.noImage ? '' : `
                 <div class="image-slot">
-                    <span class="icon">${item.icon || '🗂️'}</span>
+                    <span class="icon">${item.icon || ''}</span>
                     <span>Screenshot coming soon</span>
                 </div>
         `;
